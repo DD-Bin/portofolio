@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Praktikum App Mobile 5</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../Main/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .glass-bg {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .container-portofolio {
+            margin-top: 100px;
+        }
+        .portfolio-card {
+            background: rgba(255, 255, 255, 0.03) !important;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            border-radius: 15px !important;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .text-accent {
+            color: #B2C9AB;
+        }
+        .img-screenshot {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        .step-container {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+        }
+        .step-container:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .btn-outline-light:hover .bi-github, 
+        .btn-outline-light:hover .bi-android2, 
+        .btn-outline-light:hover .bi-youtube {
+            color: #B2C9AB;
+            transition: color 0.3s ease;
+        }
+    </style>
+    <link rel="stylesheet" href="../../Main/report.css">
+    <script src="../../Main/interactions.js" defer></script>
+    </head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark glass-bg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../../Main/index.html" style="color: #B2C9AB;">DD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../Main/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../Main/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../Main/portofolio.html">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../Main/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Laporan -->
+    <section class="portofolio-section py-5 container-portofolio">
+        <div class="container">
+            <div class="mb-4 text-center">
+                <h1 class="text-light fw-semibold">Praktikum App Mobile 5</h1>
+                <p class="text-accent">Arsitektur Navigasi, Database, & Manajemen Sesi</p>
+            </div>
+
+            <!-- Tautan Penting -->
+            <div class="d-flex justify-content-center flex-wrap gap-3 mb-5">
+                <a href="https://drive.google.com/drive/u/0/folders/12y5IRRdZhvKM7YEORoSUF5mXyYPE_ASO" target="_blank" class="btn btn-outline-light">
+                    <i class="bi bi-android2 me-2"></i> File APK
+                </a>
+                <a href="https://youtu.be/4MBWBH2giLM" target="_blank" class="btn btn-outline-light">
+                    <i class="bi bi-youtube me-2"></i> Tonton Video
+                </a>
+                <a href="https://github.com/DD-Bin/PrakAppMob_B_2411533010/tree/main/lib/praktikum5" target="_blank" class="btn btn-outline-light">
+                    <i class="bi bi-github me-2"></i> Repositori GitHub
+                </a>
+            </div>
+
+            <!-- Bagian 1: Source Code -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-file-earmark-code"></i> Kode Program Aplikasi</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Konfigurasi Rute Utama (main.dart)</h6>
+                        <p class="text-light opacity-75 small text-start">Penerapan struktur Named Routes pada level teratas aplikasi. Rute awal diarahkan ke '/login', yang akan menyortir jalur pengguna menuju Beranda atau Pendaftaran secara rapi dan terpusat.</p>
+                        <img src="../../../Images/praktikum App Mobile 5/carbon.png" class="img-fluid img-screenshot w-75" alt="Konfigurasi Rute Utama">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Penampung Halaman & Bottom Navigation (main_screen.dart)</h6>
+                        <p class="text-light opacity-75 small text-start">Membuat kerangka layar ber-tab yang mengatur pertukaran antar halaman Dashboard, Riwayat, dan Profil menggunakan BottomNavigationBar. Kode ini juga menangkap parameter data email dari proses login sebelumnya.</p>
+                        <img src="../../../Images/praktikum App Mobile 5/carbon (1).png" class="img-fluid img-screenshot w-75" alt="Bottom Navigation dan Main Screen">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Sistem Autentikasi Pengguna (login_screen.dart)</h6>
+                        <p class="text-light opacity-75 small text-start">Tampilan stateful yang menangani interaksi masuk pengguna. Komponen ini memiliki controller untuk membaca input kredensial serta menyiapkan integrasi verifikasi terhadap database.</p>
+                        <img src="../../../Images/praktikum App Mobile 5/carbon (2).png" class="img-fluid img-screenshot w-75" alt="Sistem Autentikasi Login">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Daftar Transaksi (history_screen.dart)</h6>
+                        <p class="text-light opacity-75 small text-start">Widget stateless yang difungsikan khusus merender daftar seluruh transaksi menggunakan ListView.separated. Data disalurkan langsung dari database ke antarmuka aplikasi.</p>
+                        <img src="../../../Images/praktikum App Mobile 5/carbon (3).png" class="img-fluid img-screenshot w-75" alt="Daftar Riwayat Transaksi">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Modul Database Lokal (db_helper.dart)</h6>
+                        <p class="text-light opacity-75 small text-start">Pembuatan fungsi-fungsi krusial yang menjembatani aplikasi dengan SQLite. Fungsi ini mengatur logika untuk registrasi pengguna, pengecekan login, menyimpan transaksi baru, dan menarik data riwayat.</p>
+                        <img src="../../../Images/praktikum App Mobile 5/carbon (4).png" class="img-fluid img-screenshot w-75" alt="Modul Helper Database">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Penyesuaian Beranda (dashboard_screen.dart)</h6>
+                        <p class="text-light opacity-75 small text-start">Memperbarui konstruktor Dashboard untuk menerima data pengguna (seperti nama/email) yang berhasil login, serta fungsi *callback* dari tombol mengambang menuju halaman penambahan data.</p>
+                        <img src="../../../Images/praktikum App Mobile 5/carbon (5).png" class="img-fluid img-screenshot w-75" alt="Penyesuaian Beranda Dashboard">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Halaman Akun (profile_screen.dart)</h6>
+                        <p class="text-light opacity-75 small text-start">Layar profil pengguna yang dirancang untuk menerima informasi nama dan email dari state manajemen dan menampilkannya sebagai wujud manajemen sesi dasar.</p>
+                        <img src="../../../Images/praktikum App Mobile 5/carbon (6).png" class="img-fluid img-screenshot w-75" alt="Halaman Akun Profil">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Form Pendaftaran Akun Baru (register_screen.dart)</h6>
+                        <p class="text-light opacity-75 small text-start">Pengaturan sistem pendaftaran dengan serangkaian validasi (wajib isi dan kecocokan kata sandi ganda), sebelum akhirnya memicu fungsi registerUser untuk menyimpan akun baru tersebut ke dalam memori.</p>
+                        <img src="../../../Images/praktikum App Mobile 5/carbon (7).png" class="img-fluid img-screenshot w-75" alt="Form Pendaftaran Akun Baru">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian 2: Hasil UI -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-phone"></i> Hasil Visualisasi Antarmuka Aplikasi</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Tampilan Layar Login</h6>
+                        <p class="text-light opacity-75 small text-start">Hasil akhir dari antarmuka autentikasi, yang menuntut pengguna memasukkan kredensial dan divalidasi dengan notifikasi Snackbar merah jika ada kolom yang terlewat.</p>
+                        <img src="../../../Images/praktikum App Mobile 5/Hasil1.png" class="img-fluid img-screenshot w-100" alt="Tampilan Layar Login">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Tampilan Pendaftaran Akun</h6>
+                        <p class="text-light opacity-75 small text-start">Halaman registrasi interaktif. Semua kolom input (Username, Email, dan dua Password) telah disusun rapi untuk menerima dan mengamankan data calon pengguna.</p>
+                        <img src="../../../Images/praktikum App Mobile 5/Hasil2.png" class="img-fluid img-screenshot w-100" alt="Tampilan Pendaftaran Akun">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Dashboard Pascautentikasi (Beranda)</h6>
+                        <p class="text-light opacity-75 small text-start">Keberhasilan login akan membawa pengguna kemari. Sistem menyapa akun yang aktif dan memuat informasi keseimbangan finansial serta akses bilah navigasi bawah secara bersamaan.</p>
+                        <img src="../../../Images/praktikum App Mobile 5/Hasil3.png" class="img-fluid img-screenshot w-100" alt="Dashboard Pascautentikasi">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Form Pengisian Transaksi Baru</h6>
+                        <p class="text-light opacity-75 small text-start">Form input yang dirancang sederhana namun fungsional, terhubung ke database untuk mencatat riwayat keuangan pengguna ke dalam media penyimpanan lokal.</p>
+                        <img src="../../../Images/praktikum App Mobile 5/Hasil4.png" class="img-fluid img-screenshot w-100" alt="Form Pengisian Transaksi">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Tab Riwayat Transaksi Lengkap</h6>
+                        <p class="text-light opacity-75 small text-start">Tampilan khusus tab kedua pada menu navigasi bawah. Bagian ini menyorot data pengeluaran dan pemasukan secara mendetail yang ditarik dari database lokal.</p>
+                        <img src="../../../Images/praktikum App Mobile 5/Hasil5.png" class="img-fluid img-screenshot w-100" alt="Tab Riwayat Transaksi">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Halaman Detail Profil & Logout</h6>
+                        <p class="text-light opacity-75 small text-start">Halaman akses data sesi pengguna yang masuk. Dilengkapi avatar kustom dan tombol besar Logout untuk mengakhiri sesi lalu melempar pengguna kembali ke layar pendaftaran masuk awal.</p>
+                        <img src="../../../Images/praktikum App Mobile 5/Hasil6.png" class="img-fluid img-screenshot w-100" alt="Halaman Detail Profil dan Logout">
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 mb-3">
+                <a href="../../Main/portofolio.html" class="btn btn-outline-light mx-2">
+                    <i class="bi bi-arrow-left me-2"></i> Kembali ke Portofolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-3 border-top glass-bg">
+        <div class="container">
+            <div class="row">    
+                <div class="col-lg-6 col-md-6 mb-4 text-start">
+                    <h5 class="fw-bold" style="color: #B2C9AB;">DD</h5>
+                    <p class="small text-white-50">Website portofolio Dede Bintang Gafendi, mahasiswa Informatika Universitas Andalas</p>
+                </div>            
+                <div class="col-lg-6 col-md-6 mb-4 text-md-end text-start">
+                    <h5 class="fw-bold">Let's Connect</h5>
+                    <div class="d-flex justify-content-md-end justify-content-start mt-2">
+                        <a href="https://www.instagram.com/dd2_augh/" target="_blank" class="text-white me-3 fs-4 text-decoration-none">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://github.com/DD-Bin" target="_blank" class="text-white fs-4 text-decoration-none">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>       
+            </div>    
+            <div class="text-center pt-3 border-top border-secondary">
+                <p class="small mb-0 text-white opacity-75">© 2025 Created with love by Dede Bintang Gafendi 💀</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

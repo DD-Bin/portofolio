@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Praktikum - UI/UX Design</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="../../Main/styles.css">
+    <style>
+        /* Tambahan khusus untuk konten laporan agar mudah dibaca */
+        .laprak-content {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 50px;
+        }
+        .img-detail {
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 20px;
+        }
+    </style>
+    <link rel="stylesheet" href="../../Main/report.css">
+    <script src="../../Main/interactions.js" defer></script>
+    </head>
+<body>
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark glass-bg">
+        <div class="container">
+            <a class="navbar-brand" href="../../Main/index.html">DD</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../Main/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../Main/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../Main/portofolio.html">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../Main/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Praktikum - Instalasi Laravel</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="../../Main/styles.css">
+    <style>
+        .laprak-content {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            border-radius: 15px;
+            padding: 30px;
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            margin-bottom: 50px;
+        }
+        .img-detail {
+            border-radius: 10px;
+            border: 2px solid rgba(255, 255, 255, 0.1);
+            margin-top: 15px;
+            margin-bottom: 25px;
+            max-width: 100%;
+        }
+        code { color: #B2C9AB; }
+        pre { background: rgba(0,0,0,0.5); padding: 15px; border-radius: 8px; }
+    </style>
+    <link rel="stylesheet" href="../../Main/report.css">
+</head>
+
+<body>
+    
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark glass-bg">
+        <div class="container">
+            <a class="navbar-brand" href="../../Main/index.html">DD</a>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../Main/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../Main/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../Main/portofolio.html">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../Main/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+
+<section class="container-portofolio container py-5">
+    <div class="row justify-content-center">
+        <div class="col-lg-10">
+            <a href="../../Main/portofolio.html" class="btn btn-outline-light mb-4 btn-sm">
+                <i class="bi bi-arrow-left"></i> Kembali ke Portofolio
+            </a>
+
+            <div class="laprak-header text-center mb-5">              
+                <span class="badge bg-warning text-dark mb-2">Pemrograman Web</span>
+                <h1 class="display-5 fw-bold text-light">Laporan Praktikum: Instalasi Framework Laravel</h1>
+                <p class="text-white-50">Mata Kuliah: Pemrograman Web &bull; Universitas Andalas</p>
+            </div>
+            
+            <div class="laprak-content" style="background: rgba(255, 255, 255, 0.05); backdrop-filter: blur(10px); border-radius: 15px; padding: 30px; border: 1px solid rgba(255, 255, 255, 0.1); margin-bottom: 50px;">
+                <h3 class="text-light mb-3">Pendahuluan</h3>
+                <p class="text-light opacity-75 mb-4">
+                    Praktikum ini bertujuan untuk memberikan pemahaman mendalam mengenai proses instalasi dan konfigurasi awal <b>Framework Laravel</b> sebagai salah satu framework PHP paling populer saat ini. Dalam pengembangan web modern, efisiensi dan struktur kode menjadi prioritas utama, di mana Laravel menawarkan arsitektur <i>Model-View-Controller</i> (MVC) yang memudahkan pengembang dalam mengelola logika aplikasi secara sistematis.
+                </p>
+                <p class="text-light opacity-75 mb-4">
+                    Fokus utama dari modul praktikum ini mencakup penyiapan lingkungan pengembangan lokal menggunakan <b>XAMPP</b> sebagai web server, serta penggunaan <b>Composer</b> sebagai <i>dependency manager</i> untuk mengelola pustaka PHP yang dibutuhkan. Selain aspek backend, praktikum ini juga menyentuh integrasi alat bantu frontend modern seperti <b>Vite</b> untuk optimasi aset aplikasi.
+                </p>
+                <p class="text-light opacity-75 mb-5">
+                    Melalui serangkaian langkah yang telah dilakukan, praktikan diharapkan mampu membangun pondasi aplikasi web yang kokoh, memahami alur kerja <i>routing</i>, serta mampu mengimplementasikan komponen dasar MVC untuk menciptakan aplikasi yang dinamis dan terstruktur.
+                </p>
+
+                <hr class="border-secondary mb-5">
+                <h3 class="text-light mt-4 mb-3">1. Instalasi XAMPP</h3>
+                <p class="text-light opacity-75">
+                    Langkah pertama adalah mengunduh XAMPP melalui situs resmi Apache Friends. XAMPP berfungsi untuk menginstal web server Apache, PHP, dan MySQL secara otomatis. Setelah berhasil diinstal, folder <code>htdocs</code> akan muncul secara default pada <code>C:\xampp\htdocs</code> yang nantinya digunakan untuk menyimpan project Laravel.
+                </p>
+
+                <h3 class="text-light mt-4 mb-3">2. Instalasi Composer</h3>
+                <p class="text-light opacity-75">
+                    Composer merupakan package manager untuk PHP yang digunakan untuk menambahkan package-package yang dibutuhkan pada saat development. Download pada situs resmi dan install sesuai wizard. Setelah terpasang, kita bisa menggunakan perintah composer di terminal untuk mengelola dependensi proyek.
+                </p>
+
+                <h3 class="text-light mt-4 mb-3">3. Laravel Installer & Pembuatan Project</h3>
+                <p class="text-light opacity-75">
+                    Setelah Composer siap, langkah berikutnya adalah mengunduh installer Laravel secara global dengan perintah <code>composer global require laravel/installer</code>. Kemudian, kita dapat membuat project baru dengan perintah:
+                </p>
+                <pre class="bg-black p-3 rounded mb-4"><code class="text-success">laravel new laravel01</code></pre>
+                
+                <p class="text-light opacity-75">
+                    Pada gambar di bawah, terlihat proses inisialisasi project di mana kita memilih konfigurasi seperti Starter Kit (None), Testing Framework (Pest), dan inisialisasi Git.
+                </p>
+                <img src="../../../Images/Praktikum Pemograman Web 1/gambar1.png" class="img-fluid img-detail mb-4" alt="Inisialisasi Project Laravel" style="border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1);">
+
+                <p class="text-light opacity-75">
+                    Selanjutnya, Composer akan otomatis mengunduh seluruh dependensi framework yang diperlukan untuk memastikan lingkungan pengembangan siap digunakan:
+                </p>
+                <img src="../../../Images/Praktikum Pemograman Web 1/gambar2.png" class="img-fluid img-detail mb-4" alt="Proses Download Dependensi" style="border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1);">
+
+                <p class="text-light opacity-75">
+                    Setelah folder project terbentuk, masuk ke direktori tersebut dan jalankan <code>npm install</code> untuk menyiapkan library frontend (Vite), diikuti dengan <code>npm run build</code> untuk kompilasi aset agar tampilan lebih optimal.
+                </p>
+                <div class="row mb-4">
+                    <div class="col-md-6 mb-3">
+                        <img src="../../../Images/Praktikum Pemograman Web 1/gambar3.png" class="img-fluid img-detail" alt="NPM Install" style="border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <img src="../../../Images/Praktikum Pemograman Web 1/gambar4.png" class="img-fluid img-detail" alt="NPM Run Build" style="border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                    </div>
+                </div>
+
+                <p class="text-light opacity-75">
+                    Terakhir, jalankan server dengan perintah <code>php artisan serve</code>. Jika proses berjalan lancar, tampilan welcome page Laravel akan muncul di browser Anda sebagai verifikasi bahwa instalasi telah sukses.
+                </p>
+                <div class="row mb-5">
+                    <div class="col-md-6 mb-3">
+                        <img src="../../../Images/Praktikum Pemograman Web 1/gambar6.png" class="img-fluid img-detail" alt="Running Server" style="border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <img src="../../../Images/Praktikum Pemograman Web 1/gambar7.png" class="img-fluid img-detail" alt="Laravel Success Page" style="border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                    </div>
+                </div>
+
+                <hr class="border-secondary mb-5">
+                <p class="text-light opacity-75">
+                    Routing pada Laravel dikelola di dalam file <code>routes/web.php</code>. Pada tahap ini, kita menambahkan rute baru menggunakan metode <code>Route::get()</code>. Rute <code>/helo</code> dikonfigurasi untuk mengembalikan teks string langsung ke browser.
+                </p>
+                <img src="../../../Images/Praktikum Pemograman Web 1/gambar8.png" class="img-fluid img-detail mb-4" alt="Script Routing Laravel" style="border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                <p class="text-light opacity-75">
+                    Verifikasi dilakukan dengan mengakses URL <code>http://127.0.0.1:8000/helo</code>. Browser berhasil menampilkan teks "Hello World" sesuai dengan logika yang kita definisikan.
+                </p>
+                <img src="../../../Images/Praktikum Pemograman Web 1/gambar9.png" class="img-fluid img-detail mb-4" alt="Hasil Render Browser" style="border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                <p class="text-light opacity-75">
+                    Gunakan perintah Artisan <code>make</code> untuk mempercepat pembangunan struktur aplikasi. Model digunakan untuk interaksi database, sedangkan Controller menangani logika aplikasi.
+                </p>
+                <div class="row">
+                    <div class="col-md-6 mb-3">
+                        <p class="text-light small mb-2">Membuat Model:</p>
+                        <pre class="bg-black p-2 rounded"><code class="text-success">php artisan make:model contoh-model</code></pre>
+                        <img src="../../../Images/Praktikum Pemograman Web 1/gambar10.png" class="img-fluid img-detail" alt="Artisan Make Model" style="border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                    </div>
+                    <div class="col-md-6 mb-3">
+                        <p class="text-light small mb-2">Membuat Controller:</p>
+                        <pre class="bg-black p-2 rounded"><code class="text-success">php artisan make:controller nama-controller</code></pre>
+                        <img src="../../../Images/Praktikum Pemograman Web 1/gambar11.png" class="img-fluid img-detail" alt="Artisan Make Controller" style="border-radius: 10px; border: 1px solid rgba(255, 255, 255, 0.1);">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+    <footer class="text-white pt-5 pb-3 border-top glass-bg">
+        <div class="container text-center">
+            <p class="small mb-0 text-white opacity-75">© 2026 Created with love by Dede Bintang Gafendi 💀</p>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

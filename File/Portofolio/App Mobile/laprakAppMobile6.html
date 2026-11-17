@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Praktikum App Mobile 6</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../Main/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .glass-bg {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .container-portofolio {
+            margin-top: 100px;
+        }
+        .portfolio-card {
+            background: rgba(255, 255, 255, 0.03) !important;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            border-radius: 15px !important;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .text-accent {
+            color: #B2C9AB;
+        }
+        .img-screenshot {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        .step-container {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+        }
+        .step-container:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .btn-outline-light:hover .bi-github, 
+        .btn-outline-light:hover .bi-android2, 
+        .btn-outline-light:hover .bi-youtube {
+            color: #B2C9AB;
+            transition: color 0.3s ease;
+        }
+        /* Custom Table Styling for Dark Theme */
+        .table-custom {
+            color: #ffffff;
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        .table-custom thead th {
+            background-color: rgba(178, 201, 171, 0.1);
+            color: #B2C9AB;
+            border-bottom: 2px solid rgba(178, 201, 171, 0.3);
+        }
+        .table-custom tbody td {
+            background-color: transparent;
+            border-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+        }
+        /* Analysis Section Styling */
+        .analysis-box {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-left: 4px solid #B2C9AB;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+        }
+        .analysis-question {
+            font-size: 1.1rem;
+            color: #B2C9AB;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .analysis-answer {
+            color: #e0e0e0;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+        .analysis-point {
+            margin-bottom: 15px;
+        }
+        .analysis-point strong {
+            color: #ffffff;
+        }
+    </style>
+    <link rel="stylesheet" href="../../Main/report.css">
+    <script src="../../Main/interactions.js" defer></script>
+    </head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark glass-bg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../../Main/index.html" style="color: #B2C9AB;">DD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../Main/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../Main/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../Main/portofolio.html">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../Main/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Laporan -->
+    <section class="portofolio-section py-5 container-portofolio">
+        <div class="container">
+            <div class="mb-4 text-center">
+                <h1 class="text-light fw-semibold">Praktikum App Mobile 6</h1>
+                <p class="text-accent">State Management: setState() dan Provider</p>
+            </div>
+
+            <!-- Tautan Penting -->
+            <div class="d-flex justify-content-center flex-wrap gap-3 mb-5">
+                <a href="https://drive.google.com/drive/u/0/folders/12y5IRRdZhvKM7YEORoSUF5mXyYPE_ASO" target="_blank" class="btn btn-outline-light">
+                    <i class="bi bi-android2 me-2"></i> Download APK
+                </a>
+                <a href="https://youtu.be/4MBWBH2giLM" target="_blank" class="btn btn-outline-light">
+                    <i class="bi bi-youtube me-2"></i> Tonton Video
+                </a>
+                <a href="https://github.com/DD-Bin/PrakAppMob_B_2411533010/tree/main/lib/praktikum5" target="_blank" class="btn btn-outline-light">
+                    <i class="bi bi-github me-2"></i> Repositori GitHub
+                </a>
+            </div>
+
+            <!-- Bagian 1: Checkpoint 1 -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-check2-square"></i> Checkpoint 1: Halaman Detail dan Fitur Porsi</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Perhitungan Porsi Dinamis (State Lokal)</h6>
+                        <p class="text-light opacity-75 small text-start">Menampilkan halaman detail resep 'Classic Margherita Pizza' yang diimplementasikan menggunakan StatefulWidget. Saat jumlah porsi dinaikkan menjadi 6 menggunakan setState(), total kalori berhasil dihitung secara dinamis menjadi 1800 kkal. Footer identitas juga telah tampil dengan benar di bagian bawah layar.</p>
+                        <img src="../../../Images/praktikum App Mobile 6/Checkpoint1.png" class="img-fluid img-screenshot w-100" alt="Halaman Detail dan Perhitungan Kalori">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Validasi Tombol Pengurangan Porsi</h6>
+                        <p class="text-light opacity-75 small text-start">Menunjukkan bahwa tombol kurang (-) menjadi tidak aktif (berwarna abu-abu) ketika jumlah porsi berada di angka 1, mencegah porsi bernilai nol atau negatif yang tidak logis dalam aplikasi resep masakan.</p>
+                        <img src="../../../Images/praktikum App Mobile 6/Checkpoint1b.png" class="img-fluid img-screenshot w-75" alt="Tombol Kurang Nonaktif">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Logika Penonaktifan Tombol (Ternary Operator)</h6>
+                        <p class="text-light opacity-75 small text-start">Potongan kode dari IconButton.filledTonal yang bertanggung jawab atas penonaktifan tombol kurang. Logikanya menggunakan ternary operator <code>onPressed: _servings > 1 ? _removeServing : null</code>. Jika _servings bernilai 1 atau kurang, fungsi diisi dengan null sehingga tombol otomatis dinonaktifkan oleh Flutter.</p>
+                        <img src="../../../Images/praktikum App Mobile 6/Checkpoint1c.png" class="img-fluid img-screenshot w-75" alt="Kode Logika Ternary Operator">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian 2: Checkpoint 2 -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-globe"></i> Checkpoint 2: Implementasi State Global (Provider)</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Home Page & Badge Interaktif</h6>
+                        <p class="text-light opacity-75 small text-start">Tampilan halaman HomePage setelah implementasi ChangeNotifierProvider. Ikon hati (favorit) yang ditekan pada daftar resep akan secara reaktif memperbarui angka pada ikon keranjang (badge) di AppBar menjadi 2.</p>
+                        <img src="../../../Images/praktikum App Mobile 6/Checkpoint2.png" class="img-fluid img-screenshot w-100" alt="Home Page dan Badge">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Status Favorit pada Halaman Detail</h6>
+                        <p class="text-light opacity-75 small text-start">Tampilan DetailPage dari resep yang difavoritkan. Berkat penggunaan <code>context.watch&lt;FavoriteProvider&gt;()</code>, halaman detail dapat mengetahui bahwa resep ini difavoritkan sehingga ikon hati di pojok kanan atas terisi penuh merah.</p>
+                        <img src="../../../Images/praktikum App Mobile 6/Checkpoint2b.png" class="img-fluid img-screenshot w-100" alt="Detail Page Favorit">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Daftar Halaman Favorit (Consumer)</h6>
+                        <p class="text-light opacity-75 small text-start">Tampilan FavoritePage yang menggunakan Consumer. Halaman ini berhasil merender daftar resep yang telah ditandai sebagai favorit secara terpusat dari memori global aplikasi.</p>
+                        <img src="../../../Images/praktikum App Mobile 6/Checkpoint2c.png" class="img-fluid img-screenshot w-100" alt="Daftar Halaman Favorit">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian 3: Latihan 1 -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-moon-stars"></i> Latihan 1: Tema Gelap dan Terang</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Membangun Provider Tema Baru</h6>
+                        <p class="text-light opacity-75 small text-start">Pembuatan file <code>theme_provider.dart</code> yang mewarisi class ChangeNotifier. Kelas ini bertugas menyimpan status mode tampilan aplikasi (terang/gelap) yang secara default diinisialisasi sebagai ThemeMode.light.</p>
+                        <img src="../../../Images/praktikum App Mobile 6/CodeLatihan1.png" class="img-fluid img-screenshot w-75" alt="Theme Provider">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Merancang UI Halaman Pengaturan</h6>
+                        <p class="text-light opacity-75 small text-start">Pembuatan antarmuka <code>settings_page.dart</code> menggunakan Stateless Widget. Di dalamnya disematkan komponen SwitchListTile yang mendengarkan (watch) status tema, serta memanggil fungsi pembalik tema (toggleTheme) apabila *switch* ditekan pengguna.</p>
+                        <img src="../../../Images/praktikum App Mobile 6/CodeLatihan1b.png" class="img-fluid img-screenshot w-75" alt="Halaman Pengaturan UI">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Mendaftarkan Provider di Main</h6>
+                        <p class="text-light opacity-75 small text-start">Penyesuaian pada file <code>main.dart</code>. Provider tema yang telah dibuat kemudian diimpor dan didaftarkan ke dalam MultiProvider, lalu variabel themeMode milik MaterialApp diikat agar bereaksi dengan status dari ThemeProvider tersebut.</p>
+                        <img src="../../../Images/praktikum App Mobile 6/CodeLatihan1c.png" class="img-fluid img-screenshot w-75" alt="Registrasi Provider di Main">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Kaitkan Halaman Pengaturan ke Navigasi</h6>
+                        <p class="text-light opacity-75 small text-start">Modifikasi pada <code>home_page.dart</code> untuk menyematkan ikon gerigi (Settings) pada sisi kanan AppBar, sehingga memberikan pengguna akses interaktif menuju layar kontrol mode gelap yang telah dibuat.</p>
+                        <img src="../../../Images/praktikum App Mobile 6/CodeLatihan1d.png" class="img-fluid img-screenshot w-75" alt="Tombol Pengaturan di Home">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Hasil Ikon Pengaturan di AppBar</h6>
+                        <p class="text-light opacity-75 small text-start">Potret antarmuka HomePage yang kini menampilkan ikon pengaturan (Icons.settings) bersebelahan dengan ikon badge notifikasi favorit.</p>
+                        <img src="../../../Images/praktikum App Mobile 6/Latihan1.png" class="img-fluid img-screenshot w-100" alt="Ikon Pengaturan">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Hasil Interaksi Halaman Pengaturan</h6>
+                        <p class="text-light opacity-75 small text-start">Tampilan fungsional halaman Pengaturan. Saat switch 'Mode Gelap' diaktifkan, state tema diperbarui melalui ThemeProvider menggunakan fungsi notifyListeners(), mengubah nuansa layar seketika.</p>
+                        <img src="../../../Images/praktikum App Mobile 6/Latihan1b.png" class="img-fluid img-screenshot w-100" alt="Halaman Pengaturan">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Implementasi Dark Mode Menyeluruh</h6>
+                        <p class="text-light opacity-75 small text-start">Tampilan keseluruhan aplikasi yang telah bereaksi secara dinamis. Daftar resep kini sepenuhnya dibalut dalam tema warna gelap (Dark Mode).</p>
+                        <img src="../../../Images/praktikum App Mobile 6/Latihan1c.png" class="img-fluid img-screenshot w-100" alt="Dark Mode">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian 4: Latihan 2 -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-trash3"></i> Latihan 2: Menghapus Semua Favorit</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Pembuatan Logika Penghapusan Massal</h6>
+                        <p class="text-light opacity-75 small text-start">Modifikasi di dalam file <code>favorite_page.dart</code>. Widget IconButton tambahan dimasukkan ke area actions pada AppBar. Tombol ini diprogram untuk merender pop-up AlertDialog yang menampung instruksi 'read' menuju fungsi clear() milik FavoriteProvider.</p>
+                        <img src="../../../Images/praktikum App Mobile 6/CodeLatihan2.png" class="img-fluid img-screenshot w-75" alt="Logika Hapus Semua">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Tombol Hapus Terpasang</h6>
+                        <p class="text-light opacity-75 small text-start">Penambahan ikon tempat sampah di sudut kanan AppBar halaman Favorit. Tombol ini memiliki pengaman logika untuk dinonaktifkan (disable) secara otomatis jika daftar favorit kosong (count == 0).</p>
+                        <img src="../../../Images/praktikum App Mobile 6/Latihan2.png" class="img-fluid img-screenshot w-100" alt="Tombol Hapus Semua Favorit">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Dialog Konfirmasi Penghapusan</h6>
+                        <p class="text-light opacity-75 small text-start">Munculnya dialog konfirmasi (AlertDialog) saat tombol hapus semua ditekan, bertugas memastikan pengguna tidak keliru sebelum daftar favorit dikosongkan secara bersih dari memori.</p>
+                        <img src="../../../Images/praktikum App Mobile 6/Latihan2b.png" class="img-fluid img-screenshot w-100" alt="Dialog Konfirmasi Hapus">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian 5: Tabel Pengujian -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-table"></i> Langkah C.7 - Tabel Pengujian Aplikasi</h4>
+                <div class="table-responsive">
+                    <table class="table table-custom table-bordered mt-3 mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-center" width="5%">No</th>
+                                <th scope="col" width="40%">Skenario</th>
+                                <th scope="col" width="40%">Hasil yang diharapkan</th>
+                                <th scope="col" class="text-center" width="15%">Sesuai?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Tap ikon hati pada Margherita dan Alfredo di Home</td>
+                                <td>Ikon berwarna merah, badge menunjukkan angka 2</td>
+                                <td class="text-center fw-bold">Sesuai</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td>Buka detail Margherita</td>
+                                <td>Ikon hati di AppBar terisi</td>
+                                <td class="text-center fw-bold">Sesuai</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td>Di halaman detail, tap ikon hati, lalu kembali ke Home</td>
+                                <td>Ikon Margherita kosong, badge menunjukkan angka 1</td>
+                                <td class="text-center fw-bold">Sesuai</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4</td>
+                                <td>Tap badge di AppBar</td>
+                                <td>Halaman Favorit hanya berisi Alfredo</td>
+                                <td class="text-center fw-bold">Sesuai</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">5</td>
+                                <td>Hapus Alfredo dari halaman Favorit, lalu kembali</td>
+                                <td>Muncul pesan "Belum ada resep favorit", badge hilang</td>
+                                <td class="text-center fw-bold">Sesuai</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">6</td>
+                                <td>Ubah porsi menjadi 2, kembali ke Home, lalu buka lagi resep yang sama</td>
+                                <td>Porsi kembali ke nilai awal, karena state lokal ikut dibuang ketika halaman ditutup</td>
+                                <td class="text-center fw-bold">Sesuai</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Bagian 6: Pertanyaan Analisis -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-chat-right-text"></i> Pertanyaan Analisis</h4>
+                
+                <div class="analysis-box">
+                    <div class="analysis-question">1. Jawaban dari Tiga Pertanyaan Eksperimen Langkah B.2</div>
+                    <div class="analysis-answer">
+                        <div class="analysis-point">
+                            <strong>Apakah ikon hati berubah? Mengapa?</strong><br>
+                            Ya, ikon hati berubah saat ditekan karena nilai <code>isFavorite</code> disimpan sebagai state lokal menggunakan <code>setState()</code> di dalam <code>RecipeTileState</code>, yang memicu widget tersebut untuk merender ulang dirinya sendiri.
+                        </div>
+                        <div class="analysis-point">
+                            <strong>Apakah jumlah favorit dapat ditampilkan di AppBar HomePage?</strong><br>
+                            Tidak dapat dilakukan. Data <code>isFavorite</code> terisolasi di dalam class <code>RecipeTileState</code>. Karena HomePage berada di atas RecipeTile dalam hierarki widget tree, HomePage tidak bisa membaca state lokal milik child-nya.
+                        </div>
+                        <div class="analysis-point">
+                            <strong>Bagaimana halaman detail mengetahui resep tersebut favorit?</strong><br>
+                            Halaman detail tidak dapat mengetahui status favorit tersebut (ikon hatinya akan mereset menjadi kosong). Hal ini karena state lokal <code>isFavorite</code> hanya hidup di dalam RecipeTile, sehingga ketika DetailPage dibuka sebagai rute baru yang terpisah, ia tidak memiliki akses ke state milik tile tersebut.
+                        </div>
+                    </div>
+                </div>
+
+                <div class="analysis-box">
+                    <div class="analysis-question">2. Mengapa jumlah porsi tetap menggunakan setState() dan tidak dimasukkan ke Provider?</div>
+                    <div class="analysis-answer">
+                        Karena jumlah porsi sifatnya cuma numpang lewat (ephemeral state). Analoginya seperti sedang mencoba zoom gambar di galeri HP. Saat ditekan tombol back lalu membuka gambar itu lagi, ukurannya pasti kembali normal. Sama halnya dengan jumlah porsi, hal itu memang sengaja membiarkan data itu di-reset dan hancur dari memori saat halaman ditutup karena widget lain sama sekali tidak peduli dengan hitungan porsi tersebut. Memasukkannya ke Provider justru akan membuat sistem repot mengurus data yang sebentar lagi dibuang.
+                    </div>
+                </div>
+
+                <div class="analysis-box">
+                    <div class="analysis-question">3. Memindahkan ChangeNotifierProvider ke dalam HomePage</div>
+                    <div class="analysis-answer">
+                        Jika <code>ChangeNotifierProvider</code> dipindahkan hanya membungkus HomePage, maka ketika halaman Favorit atau Detail dibuka, aplikasi akan crash dan memunculkan error <code>ProviderNotFoundException</code>. Penyebabnya, perpindahan halaman (<code>Navigator.push</code>) menempatkan FavoritePage dan DetailPage sejajar atau di tempat yang berbeda pada struktur widget tree, sehingga mereka tidak lagi berada di bawah HomePage (bukan keturunan/child-nya). Oleh karena itu, provider tersebut tidak dapat ditemukan oleh halaman lain, dan harus diposisikan di atas <code>MaterialApp</code> agar cakupannya bersifat global untuk seluruh rute.
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="text-center mt-5 mb-3">
+                <a href="../../Main/portofolio.html" class="btn btn-outline-light mx-2">
+                    <i class="bi bi-arrow-left me-2"></i> Kembali ke Portofolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-3 border-top glass-bg">
+        <div class="container">
+            <div class="row">    
+                <div class="col-lg-6 col-md-6 mb-4 text-start">
+                    <h5 class="fw-bold" style="color: #B2C9AB;">DD</h5>
+                    <p class="small text-white-50">Website portofolio Dede Bintang Gafendi, mahasiswa Informatika Universitas Andalas</p>
+                </div>            
+                <div class="col-lg-6 col-md-6 mb-4 text-md-end text-start">
+                    <h5 class="fw-bold">Let's Connect</h5>
+                    <div class="d-flex justify-content-md-end justify-content-start mt-2">
+                        <a href="https://www.instagram.com/dd2_augh/" target="_blank" class="text-white me-3 fs-4 text-decoration-none">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://github.com/DD-Bin" target="_blank" class="text-white fs-4 text-decoration-none">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>       
+            </div>    
+            <div class="text-center pt-3 border-top border-secondary">
+                <p class="small mb-0 text-white opacity-75">© 2025 Created with love by Dede Bintang Gafendi 💀</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

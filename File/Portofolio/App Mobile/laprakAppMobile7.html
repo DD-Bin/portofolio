@@ -1,0 +1,389 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Praktikum App Mobile 7</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../Main/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .glass-bg {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .container-portofolio {
+            margin-top: 100px;
+        }
+        .portfolio-card {
+            background: rgba(255, 255, 255, 0.03) !important;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            border-radius: 15px !important;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .text-accent {
+            color: #B2C9AB;
+        }
+        .img-screenshot {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        .step-container {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+        }
+        .step-container:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .btn-outline-light:hover .bi-github, 
+        .btn-outline-light:hover .bi-android2, 
+        .btn-outline-light:hover .bi-youtube {
+            color: #B2C9AB;
+            transition: color 0.3s ease;
+        }
+        /* Custom Table Styling for Dark Theme */
+        .table-custom {
+            color: #ffffff;
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+        .table-custom thead th {
+            background-color: rgba(178, 201, 171, 0.1);
+            color: #B2C9AB;
+            border-bottom: 2px solid rgba(178, 201, 171, 0.3);
+        }
+        .table-custom tbody td {
+            background-color: transparent;
+            border-color: rgba(255, 255, 255, 0.1);
+            color: #ffffff;
+        }
+        /* Analysis Section Styling */
+        .analysis-box {
+            background-color: rgba(0, 0, 0, 0.2);
+            border-left: 4px solid #B2C9AB;
+            padding: 20px;
+            border-radius: 0 8px 8px 0;
+            margin-bottom: 20px;
+        }
+        .analysis-question {
+            font-size: 1.1rem;
+            color: #B2C9AB;
+            margin-bottom: 12px;
+            font-weight: 600;
+        }
+        .analysis-answer {
+            color: #e0e0e0;
+            font-size: 0.95rem;
+            line-height: 1.7;
+            opacity: 0.9;
+        }
+    </style>
+    <link rel="stylesheet" href="../../Main/report.css">
+    <script src="../../Main/interactions.js" defer></script>
+    </head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark glass-bg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../../Main/index.html" style="color: #B2C9AB;">DD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../Main/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../Main/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../Main/portofolio.html">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../Main/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Laporan -->
+    <section class="portofolio-section py-5 container-portofolio">
+        <div class="container">
+            <div class="mb-4 text-center">
+                <h1 class="text-light fw-semibold">Praktikum App Mobile 7</h1>
+                <p class="text-accent">List, Grid, Images, dan Assets</p>
+            </div>
+
+            <!-- Tautan Penting -->
+            <div class="d-flex justify-content-center flex-wrap gap-3 mb-5">
+                <a href="https://github.com/DD-Bin/2411533010_KelasB_AppMob_ResepKu/tree/praktikum-7" target="_blank" class="btn btn-outline-light">
+                    <i class="bi bi-github me-2"></i> Repositori GitHub
+                </a>
+            </div>
+
+            <!-- Checkpoint 1 & 2 -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-image"></i> Checkpoint 1 & 2: Assets dan Image Network</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Checkpoint 1: Asset Gambar dan Custom Font</h6>
+                        <p class="text-light opacity-75 small text-start">Tampilan awal aplikasi yang telah mengimplementasikan custom font Poppins untuk seluruh tipografi serta menambahkan asset lokal berupa logo aplikasi pada AppBar.</p>
+                        <img src="../../../Images/praktikum App Mobile 7/Checkpoint1.png" class="img-fluid img-screenshot w-100" alt="Checkpoint 1">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Checkpoint 2: ListView dan Image.network</h6>
+                        <p class="text-light opacity-75 small text-start">Penerapan <code>ListView.builder</code> untuk merender daftar resep secara dinamis, dilengkapi dengan pengambilan gambar (thumbnail) dari internet menggunakan <code>Image.network</code>.</p>
+                        <img src="../../../Images/praktikum App Mobile 7/Checkpoint2.png" class="img-fluid img-screenshot w-100" alt="Checkpoint 2">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Checkpoint 2b: Error State Gambar</h6>
+                        <p class="text-light opacity-75 small text-start">Pengujian <i>errorBuilder</i> pada pemuatan gambar dari internet. Saat gambar gagal dimuat (misal karena URL tidak valid atau jaringan terputus), aplikasi memunculkan gambar placeholder berupa ikon piring dari asset lokal alih-alih menampilkan error merah yang merusak UI.</p>
+                        <img src="../../../Images/praktikum App Mobile 7/Checkpoint2b.png" class="img-fluid img-screenshot w-100" alt="Checkpoint 2b Error State">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Langkah C.3: Perhitungan Kartu -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-calculator"></i> Langkah C.3: Perhitungan Grid Kartu</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Tampilan Halaman Detail dengan Porsi Aktif</h6>
+                        <p class="text-light opacity-75 small text-start">Halaman detail resep yang telah diperbarui, menampilkan foto makanan dengan proporsi besar di bagian atas.</p>
+                        <img src="../../../Images/praktikum App Mobile 7/LangkahC3.png" class="img-fluid img-screenshot w-100" alt="Langkah C3 Detail Image">
+                    </div>
+                </div>
+
+                <div class="mb-4">
+                    <h6 class="fw-bold text-light">1. Menghitung Lebar Kartu (dp)</h6>
+                    <p class="text-light opacity-75 small">Pertama, kurangi lebar layar dengan semua padding dan spacing, lalu bagi sisanya dengan jumlah kolom.<br>
+                    Total Ruang Tersedia = Lebar Layar - Total Padding - Spacing Antar Kolom<br>
+                    Total Ruang Tersedia = 360 dp - (8 dp + 8 dp) - 8 dp<br>
+                    Total Ruang Tersedia = 360 - 16 - 8 = 336 dp<br>
+                    Lebar per kartu = Total Ruang Tersedia / Jumlah Kolom<br>
+                    Lebar per kartu = 336 / 2 = 168 dp</p>
+                    
+                    <h6 class="fw-bold text-light mt-4">2. Menghitung Tinggi Kartu (dp)</h6>
+                    <p class="text-light opacity-75 small">Setelah lebar kartu diketahui (168 dp), gunakan rumus rasio childAspectRatio (Lebar : Tinggi = 3 : 4).<br>
+                    Rasio = Lebar / Tinggi<br>
+                    Tinggi = Lebar / Rasio<br>
+                    Tinggi = 168 / (3 / 4)<br>
+                    Tinggi = 168 * (4 / 3) = 224 dp</p>
+                </div>
+
+                <div class="table-responsive">
+                    <table class="table table-custom table-bordered mt-3 mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" width="60%">Yang Dihitung</th>
+                                <th scope="col" width="40%">Hasil</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Lebar Kartu ( dp )</td>
+                                <td class="fw-bold">168</td>
+                            </tr>
+                            <tr>
+                                <td>Tinggi Kartu ( dp )</td>
+                                <td class="fw-bold">224</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Checkpoint 3 -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-grid"></i> Checkpoint 3: Mode Grid dan Transisi Detail</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Tampilan GridView dengan Tombol Toggle</h6>
+                        <p class="text-light opacity-75 small text-start">Perubahan antarmuka menjadi mode grid melalui <code>GridView.builder</code>. Aplikasi kini menampilkan resep berupa kartu dua kolom dengan rasio aspect 3:4. Status favorit (ikon hati merah) disinkronkan secara global dari Provider.</p>
+                        <img src="../../../Images/praktikum App Mobile 7/Checkpoint3.png" class="img-fluid img-screenshot w-100" alt="Checkpoint 3 GridView">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Akses Detail dari Mode Grid</h6>
+                        <p class="text-light opacity-75 small text-start">Kartu resep pada antarmuka grid telah dibungkus menggunakan <code>InkWell</code> sehingga dapat ditekan untuk melakukan transisi navigasi menuju layar detail dengan mempertahankan identitas resep yang dipilih.</p>
+                        <img src="../../../Images/praktikum App Mobile 7/Checkpoint3b.png" class="img-fluid img-screenshot w-100" alt="Checkpoint 3b Detail Navigasi">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Langkah D.2 -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-table"></i> Langkah D.2: Pengujian Fungsionalitas Skenario</h4>
+                <div class="table-responsive">
+                    <table class="table table-custom table-bordered mt-3 mb-0">
+                        <thead>
+                            <tr>
+                                <th scope="col" class="text-center" width="5%">No</th>
+                                <th scope="col" width="40%">Skenario</th>
+                                <th scope="col" width="40%">Hasil Yang diharapkan</th>
+                                <th scope="col" class="text-center" width="15%">Sesuai?</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="text-center">1</td>
+                                <td>Buka Aplikasi</td>
+                                <td>Logo di AppBar, font Poppins, thumbnail foto di setiap resep</td>
+                                <td class="text-center fw-bold">Sesuai</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">2</td>
+                                <td>Tekan tombol grid di AppBar</td>
+                                <td>Resep tampil sebagai kartu dua kolom; ikon tombol berubah menjadi ikon list</td>
+                                <td class="text-center fw-bold">Sesuai</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">3</td>
+                                <td>Di mode grid, tap ikon hati di margherita</td>
+                                <td>Ikon merah dan badge bertambah</td>
+                                <td class="text-center fw-bold">Sesuai</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">4</td>
+                                <td>Kembali ke mode list</td>
+                                <td>Ikon hati margherita tetap merah</td>
+                                <td class="text-center fw-bold">Sesuai</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">5</td>
+                                <td>Tap kartu alfredo di mode grid</td>
+                                <td>Halaman detail terbuka dengan foto besar di atas</td>
+                                <td class="text-center fw-bold">Sesuai</td>
+                            </tr>
+                            <tr>
+                                <td class="text-center">6</td>
+                                <td>Aktifkan mode pesawat, tutup dan buka aplikasi</td>
+                                <td>Gambar placeholder tampil tanpa error merah</td>
+                                <td class="text-center fw-bold">Sesuai</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <!-- Latihan 1-3 -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-star"></i> Latihan 1, 2, & 3</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Latihan 1: ChoiceChip Filter Kategori (Cuisine)</h6>
+                        <p class="text-light opacity-75 small text-start">Implementasi fitur penyaringan resep masakan berbasis kategori menggunakan widget <code>ChoiceChip</code> horizontal yang ditempatkan persis di bawah AppBar.</p>
+                        <img src="../../../Images/praktikum App Mobile 7/Latihan1.png" class="img-fluid img-screenshot w-100" alt="Latihan 1 Choice Chip">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Latihan 2: Manajemen Halaman Favorit dengan Dismissible</h6>
+                        <p class="text-light opacity-75 small text-start">Pembaharuan halaman favorit yang kini menyertakan fitur usap (swipe) untuk menghapus menggunakan widget <code>Dismissible</code>, lengkap dengan notifikasi peringatan (SnackBar).</p>
+                        <img src="../../../Images/praktikum App Mobile 7/Latihan2.png" class="img-fluid img-screenshot w-100" alt="Latihan 2 Dismissible">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Latihan 3: CustomScrollView dan SliverAppBar</h6>
+                        <p class="text-light opacity-75 small text-start">Pemugaran tampilan halaman detail menggunakan <code>CustomScrollView</code>. Konfigurasi ini menyematkan foto sebagai background <code>SliverAppBar</code> yang akan berinteraksi responsif mengecil menyesuaikan sapuan layar ketika halaman di-scroll ke bawah.</p>
+                        <img src="../../../Images/praktikum App Mobile 7/Latihan3.png" class="img-fluid img-screenshot w-100" alt="Latihan 3 Sliver App Bar">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Pertanyaan Analisis -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-chat-right-text"></i> Pertanyaan Analisis</h4>
+                
+                <div class="analysis-box">
+                    <div class="analysis-question">Mengapa status favorit tetap sama di grid dan list?</div>
+                    <div class="analysis-answer">
+                        Status favorit tetap sama karena data favorit tidak disimpan di dalam rancangan widget RecipeGridCard atau RecipeTile, melainkan disimpan secara terpusat di FavoriteProvider seperti yang dipelajari pada Modul 6. Karena kedua widget tersebut hanya bertugas menampilkan ("watch") data dari sumber Provider yang sama, maka penambahan favorit di tampilan grid akan otomatis terbaca saat kita pindah ke tampilan list.
+                    </div>
+                </div>
+
+                <div class="analysis-box">
+                    <div class="analysis-question">Apa akibatnya jika baris <code>if (loadingProgress == null) return child;</code> dihapus?</div>
+                    <div class="analysis-answer">
+                        Jika baris tersebut dihapus, maka foto asli dari internet tidak akan pernah muncul di layar dan aplikasi hanya akan menampilkan ikon loading (gambar garpu dan sendok) terus-menerus. Hal ini terjadi karena baris tersebut adalah kunci yang memerintahkan aplikasi untuk memunculkan gambar asli (child) saat proses unduhannya sudah selesai (ditandai dengan nilai loadingProgress yang kosong/null).
+                    </div>
+                </div>
+
+                <div class="analysis-box">
+                    <div class="analysis-question">Hitungan pixel dan dampaknya pada memori?</div>
+                    <div class="analysis-answer">
+                        Tanpa cacheWidth, satu foto diproses sebesar 960.000 pixel ($1200 \times 800$), sedangkan dengan cacheWidth: 168 (tinggi foto akan menyesuaikan proporsinya menjadi 112), aplikasi hanya memproses 18.816 pixel ($168 \times 112$). Jika diaplikasikan pada 50 resep di Modul 8 tanpa cacheWidth, memori HP (RAM) akan cepat penuh dan membuat aplikasi menjadi sangat lag atau bahkan tertutup sendiri (force close) karena harus memproses hampir 50 juta pixel secara bersamaan.
+                    </div>
+                </div>
+
+                <div class="analysis-box">
+                    <div class="analysis-question">Alasan pemilihan Asset vs Network</div>
+                    <div class="analysis-answer">
+                        Logo aplikasi menggunakan <code>Image.asset</code> (penyimpanan lokal) agar bisa langsung muncul secara instan saat aplikasi dibuka tanpa harus menunggu koneksi internet. Sebaliknya, foto resep menggunakan <code>Image.network</code> dari internet agar ukuran file pemasangan aplikasi (APK) tidak menjadi sangat besar dan berat, mengingat jumlah foto resep yang banyak dan datanya bisa bertambah sewaktu-waktu.
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 mb-3">
+                <a href="../../Main/portofolio.html" class="btn btn-outline-light mx-2">
+                    <i class="bi bi-arrow-left me-2"></i> Kembali ke Portofolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-3 border-top glass-bg">
+        <div class="container">
+            <div class="row">    
+                <div class="col-lg-6 col-md-6 mb-4 text-start">
+                    <h5 class="fw-bold" style="color: #B2C9AB;">DD</h5>
+                    <p class="small text-white-50">Website portofolio Dede Bintang Gafendi, mahasiswa Informatika Universitas Andalas</p>
+                </div>            
+                <div class="col-lg-6 col-md-6 mb-4 text-md-end text-start">
+                    <h5 class="fw-bold">Let's Connect</h5>
+                    <div class="d-flex justify-content-md-end justify-content-start mt-2">
+                        <a href="https://www.instagram.com/dd2_augh/" target="_blank" class="text-white me-3 fs-4 text-decoration-none">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://github.com/DD-Bin" target="_blank" class="text-white fs-4 text-decoration-none">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>       
+            </div>    
+            <div class="text-center pt-3 border-top border-secondary">
+                <p class="small mb-0 text-white opacity-75">© 2025 Created with love by Dede Bintang Gafendi 💀</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

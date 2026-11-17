@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Praktikum App Mobile 4</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../Main/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .glass-bg {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .container-portofolio {
+            margin-top: 100px;
+        }
+        .portfolio-card {
+            background: rgba(255, 255, 255, 0.03) !important;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            border-radius: 15px !important;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .text-accent {
+            color: #B2C9AB;
+        }
+        .img-screenshot {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        .step-container {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+        }
+        .step-container:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .btn-outline-light:hover .bi-github {
+            color: #B2C9AB;
+            transition: color 0.3s ease;
+        }
+    </style>
+    <link rel="stylesheet" href="../../Main/report.css">
+    <script src="../../Main/interactions.js" defer></script>
+    </head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark glass-bg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../../Main/index.html" style="color: #B2C9AB;">DD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../Main/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../Main/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../Main/portofolio.html">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../Main/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Laporan -->
+    <section class="portofolio-section py-5 container-portofolio">
+        <div class="container">
+            <div class="mb-5 text-center">
+                <h1 class="text-light fw-semibold">Praktikum App Mobile 4</h1>
+                <p class="text-accent">Navigasi Dasar & Passing Data Antar Layar</p>
+            </div>
+
+            <!-- Bagian 1: Main -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-file-earmark-code"></i> Bagian 1: Konfigurasi Utama Aplikasi</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Inisialisasi Rute Awal (Main.dart)</h6>
+                        <p class="text-light opacity-75 small text-start">File utama yang mengonfigurasi aplikasi dengan mengaktifkan tema warna merah secara global dan memanggil layar DashboardScreen sebagai halaman pertama yang dimuat saat aplikasi dibuka[cite: 26].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Carbon1.png" class="img-fluid img-screenshot w-75" alt="Konfigurasi Utama Aplikasi">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian 2: Dashboard -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-speedometer2"></i> Bagian 2: Layar Dashboard Keuangan</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Penyusunan AppBar & Tombol Navigasi FAB</h6>
+                        <p class="text-light opacity-75 small text-start">Pembuatan antarmuka dashboard dengan tombol aksi melayang (Floating Action Button). Tombol ini menggunakan fungsi navigasi Push untuk memindahkan pengguna ke halaman pengisian formulir transaksi secara langsung saat ditekan[cite: 27].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Carbon2.png" class="img-fluid img-screenshot w-75" alt="AppBar dan Tombol Navigasi FAB">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Kerangka Konten Dashboard</h6>
+                        <p class="text-light opacity-75 small text-start">Menyusun ruang konten dashboard dalam area yang bisa di-scroll (SingleChildScrollView). Konten tersebut meliputi teks sapaan personal pengguna, area kartu saldo, serta komponen daftar riwayat transaksi[cite: 27].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Carbon3.png" class="img-fluid img-screenshot w-75" alt="Kerangka Konten Dashboard">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Desain Visual Kartu Saldo</h6>
+                        <p class="text-light opacity-75 small text-start">Potongan kode khusus untuk mencetak elemen visual berbentuk kartu dengan latar belakang merah, yang menampung informasi nominal saldo utama sebesar Rp 5.000.000 secara tebal dan mencolok[cite: 28].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Carbon4.png" class="img-fluid img-screenshot w-75" alt="Desain Kartu Saldo">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Daftar Transaksi & Logika Pengiriman Data (Bagian 1)</h6>
+                        <p class="text-light opacity-75 small text-start">Implementasi item riwayat transaksi pada list. Dilengkapi fitur interaktif di mana sentuhan pada item tersebut akan memicu navigasi, sekaligus membawa (passing) paket data rincian terkait menuju layar detail transaksi[cite: 29].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Carbon5.png" class="img-fluid img-screenshot w-75" alt="Daftar Transaksi dan Logika Navigasi">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Daftar Transaksi & Logika Pengiriman Data (Lanjutan)</h6>
+                        <p class="text-light opacity-75 small text-start">Lanjutan dari baris kode fungsi navigasi yang mempersiapkan parameter data transaksi secara spesifik untuk diolah oleh rute halaman tujuan[cite: 30].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Carbon6.png" class="img-fluid img-screenshot w-75" alt="Lanjutan Logika Pengiriman Data">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Penambahan Item Transaksi Pemasukan</h6>
+                        <p class="text-light opacity-75 small text-start">Menyisipkan entri tambahan pada daftar transaksi yang mewakili pemasukan gaji. Item ini juga diprogram agar dapat ditekan dan mengirimkan datanya tersendiri ke layar detail[cite: 31].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Carbon7.png" class="img-fluid img-screenshot w-75" alt="Penambahan Item Transaksi Pemasukan">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian 3: Add Transaction Screen -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-pencil-square"></i> Bagian 3: Layar Pencatatan Transaksi Baru</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Deklarasi Halaman Formulir</h6>
+                        <p class="text-light opacity-75 small text-start">Mendeklarasikan layar pencatatan transaksi menggunakan stateful widget yang aktif memonitor input dari pengguna, dilengkapi inisialisasi awal pengontrol teks untuk menangkap masukan[cite: 31].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Carbon8.png" class="img-fluid img-screenshot w-75" alt="Deklarasi Halaman Formulir">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Kerangka Antarmuka Pengisian Data</h6>
+                        <p class="text-light opacity-75 small text-start">Penyusunan tata letak formulir transaksi dengan merangkai kolom-kolom TextFormField ke dalam orientasi vertikal, dipisahkan oleh SizedBox, serta ditutup dengan ElevatedButton untuk memproses simpanan data[cite: 32].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Carbon9.png" class="img-fluid img-screenshot w-75" alt="Kerangka Antarmuka Pengisian Data">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian 4: Transaction Detail Screen -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-receipt"></i> Bagian 4: Layar Rincian Transaksi Terperinci</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Konstruktor Penampung Passing Data</h6>
+                        <p class="text-light opacity-75 small text-start">Membuat komponen stateless khusus yang struktur datanya diikat dengan modifier 'required', bertujuan memaksa layar ini menerima paketan data eksternal (seperti judul dan jumlah transaksi) setiap kali dipanggil[cite: 32].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Carbon10.png" class="img-fluid img-screenshot w-75" alt="Konstruktor Penampung Passing Data">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Desain Visual Bagian Atas Rincian</h6>
+                        <p class="text-light opacity-75 small text-start">Merancang estetika bagian atas antarmuka rincian yang mencolok; menghadirkan ikon kuitansi berukuran besar dipadu dengan tipografi judul serta nominal angka transaksi[cite: 33].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Carbon11.png" class="img-fluid img-screenshot w-75" alt="Desain Visual Bagian Atas Rincian">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Penempatan Data Informasi Rincian</h6>
+                        <p class="text-light opacity-75 small text-start">Menyusun baris detail tambahan di bawah informasi utama, memanggil fungsi pembantu untuk mendistribusikan data kategori dan penanggalan yang diteruskan dari layar sebelumnya secara harmonis[cite: 33].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Carbon12.png" class="img-fluid img-screenshot w-75" alt="Penempatan Data Informasi Rincian">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Fungsi Pembantu Tata Letak Baris</h6>
+                        <p class="text-light opacity-75 small text-start">Sebuah potongan blok kode khusus (widget pembantu) yang bertugas menjaga kerapian letak, memisahkan secara proporsional antara teks label statis dan teks nilai dinamis ke tepi berlawanan[cite: 34].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Carbon14.png" class="img-fluid img-screenshot w-75" alt="Fungsi Pembantu Tata Letak Baris">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian 5: Hasil Visualisasi UI -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-display"></i> Bagian 5: Hasil Visualisasi Antarmuka</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Tampilan Sentral Dashboard</h6>
+                        <p class="text-light opacity-75 small text-start">Uji coba visual akhir yang membuktikan seluruh penyusunan layar pusat navigasi berhasil dimuat, menampilkan kartu dompet virtual beserta deretan daftar pemasukan dan pengeluaran[cite: 34].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Hasil1.png" class="img-fluid img-screenshot w-100" alt="Tampilan Sentral Dashboard">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Tampilan Layar Formulir Pencatatan</h6>
+                        <p class="text-light opacity-75 small text-start">Uji coba navigasi dari tombol melayang menghasilkan rute sempurna menuju halaman pencatatan transaksi yang bersih dan siap diisi[cite: 35].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Hasil2.png" class="img-fluid img-screenshot w-100" alt="Tampilan Layar Formulir Pencatatan">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian 6: Latihan Tambahan -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-gear"></i> Bagian 6: Latihan Optimasi Formulir Tanggal</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Pengamanan Format Input Tanggal</h6>
+                        <p class="text-light opacity-75 small text-start">Modifikasi yang memastikan kolom kalender tidak bisa diketik manual (readOnly = true), memaksa pengguna memicu metode pemanggilan Date Picker secara terprogram demi konsistensi pendataan format waktu[cite: 35].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Carbon13.png" class="img-fluid img-screenshot w-75" alt="Pengamanan Format Input Tanggal">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Uji Coba Pengisian Transaksi Baru (Latihan)</h6>
+                        <p class="text-light opacity-75 small text-start">Simulasi praktik yang berhasil merekam interaksi pengguna untuk formulir pembelian bensin senilai 17500 lengkap dengan verifikasi penanggalan format terstruktur[cite: 36].</p>
+                        <img src="../../../Images/praktikum App Mobile 4/Hasil3.png" class="img-fluid img-screenshot w-100" alt="Uji Coba Pengisian Transaksi Baru Latihan">
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 mb-3">
+                <a href="https://github.com/DD-Bin/PrakAppMob_B_2411533010" target="_blank" class="btn btn-outline-light mx-2">
+                    <i class="bi bi-github me-2"></i> Lihat Repository
+                </a>
+                <a href="../../Main/portofolio.html" class="btn btn-outline-light mx-2">
+                    <i class="bi bi-arrow-left me-2"></i> Kembali ke Portofolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-3 border-top glass-bg">
+        <div class="container">
+            <div class="row">    
+                <div class="col-lg-6 col-md-6 mb-4 text-start">
+                    <h5 class="fw-bold" style="color: #B2C9AB;">DD</h5>
+                    <p class="small text-white-50">Website portofolio Dede Bintang Gafendi, mahasiswa Informatika Universitas Andalas</p>
+                </div>            
+                <div class="col-lg-6 col-md-6 mb-4 text-md-end text-start">
+                    <h5 class="fw-bold">Let's Connect</h5>
+                    <div class="d-flex justify-content-md-end justify-content-start mt-2">
+                        <a href="https://www.instagram.com/dd2_augh/" target="_blank" class="text-white me-3 fs-4 text-decoration-none">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://github.com/DD-Bin" target="_blank" class="text-white fs-4 text-decoration-none">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>       
+            </div>    
+            <div class="text-center pt-3 border-top border-secondary">
+                <p class="small mb-0 text-white opacity-75">© 2025 Created with love by Dede Bintang Gafendi 💀</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

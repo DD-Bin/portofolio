@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Laporan Praktikum App Mobile 3</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="../../Main/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
+    <style>
+        body {
+            background-color: #121212;
+            color: #e0e0e0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+        .glass-bg {
+            background: rgba(255, 255, 255, 0.05);
+            backdrop-filter: blur(10px);
+            -webkit-backdrop-filter: blur(10px);
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+        .container-portofolio {
+            margin-top: 100px;
+        }
+        .portfolio-card {
+            background: rgba(255, 255, 255, 0.03) !important;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.08) !important;
+            border-radius: 15px !important;
+            padding: 30px;
+            margin-bottom: 30px;
+        }
+        .text-accent {
+            color: #B2C9AB;
+        }
+        .img-screenshot {
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 8px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
+            margin-top: 10px;
+            max-width: 100%;
+            height: auto;
+        }
+        .step-container {
+            margin-bottom: 40px;
+            padding-bottom: 20px;
+            border-bottom: 1px dashed rgba(255, 255, 255, 0.1);
+        }
+        .step-container:last-child {
+            border-bottom: none;
+            margin-bottom: 0;
+            padding-bottom: 0;
+        }
+        .btn-outline-light:hover .bi-github {
+            color: #B2C9AB;
+            transition: color 0.3s ease;
+        }
+    </style>
+    <link rel="stylesheet" href="../../Main/report.css">
+    <script src="../../Main/interactions.js" defer></script>
+    </head>
+<body>
+    
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg fixed-top navbar-dark glass-bg">
+        <div class="container">
+            <a class="navbar-brand fw-bold" href="../../Main/index.html" style="color: #B2C9AB;">DD</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="../../Main/index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../Main/about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../Main/portofolio.html">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../Main/contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Content Laporan -->
+    <section class="portofolio-section py-5 container-portofolio">
+        <div class="container">
+            <div class="mb-5 text-center">
+                <h1 class="text-light fw-semibold">Praktikum App Mobile 3</h1>
+                <p class="text-accent">Form Transaksi Lanjutan & Validasi Data</p>
+            </div>
+
+            <!-- Bagian 1: Persiapan Variabel & Form -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-file-earmark-code"></i> Kode Program Transaksi</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Inisialisasi Controller Form</h6>
+                        <p class="text-light opacity-75 small text-start">Deklarasi dua alat kontrol teks (`TextEditingController`) untuk menangkap input data judul dan nominal transaksi secara real-time[cite: 6].</p>
+                        <img src="../../../Images/praktikum App Mobile 3/Carbon1.png" class="img-fluid img-screenshot w-75" alt="Inisialisasi Controller Form">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Pengaturan Data Kategori</h6>
+                        <p class="text-light opacity-75 small text-start">Mendefinisikan variabel string kategori terpilih serta membuat *list* yang memuat opsi dropdown kategori seperti makanan, transportasi, hiburan, dan lainnya[cite: 6].</p>
+                        <img src="../../../Images/praktikum App Mobile 3/Carbon2.png" class="img-fluid img-screenshot w-75" alt="Pengaturan Data Kategori">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Pembersihan Memori (Dispose)</h6>
+                        <p class="text-light opacity-75 small text-start">Memanggil metode `dispose()` guna membersihkan sisa data dari controller sesaat setelah halaman ditutup agar memori perangkat tidak terbebani (*memory leak*)[cite: 6].</p>
+                        <img src="../../../Images/praktikum App Mobile 3/Carbon3.png" class="img-fluid img-screenshot w-75" alt="Pembersihan Memori Dispose">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Desain AppBar Transaksi</h6>
+                        <p class="text-light opacity-75 small text-start">Membangun kerangka dasar Scaffold yang dihiasi AppBar berwarna `deepPurple` elegan dengan judul halaman "catat transaksi baru"[cite: 6].</p>
+                        <img src="../../../Images/praktikum App Mobile 3/Carbon4.png" class="img-fluid img-screenshot w-75" alt="Desain AppBar Transaksi">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Struktur Penampung Form</h6>
+                        <p class="text-light opacity-75 small text-start">Implementasi area bergulir (`SingleChildScrollView`) yang dipadukan dengan widget Form dan disusun sejajar merata ke samping menggunakan `CrossAxisAlignment.stretch`[cite: 6].</p>
+                        <img src="../../../Images/praktikum App Mobile 3/Carbon5.png" class="img-fluid img-screenshot w-75" alt="Struktur Penampung Form">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Validasi Judul Transaksi</h6>
+                        <p class="text-light opacity-75 small text-start">Pembuatan kolom input untuk judul transaksi lengkap dengan garis batas tepi (border) dan fungsi validasi agar pengguna tidak mengirimkan teks kosong[cite: 6].</p>
+                        <img src="../../../Images/praktikum App Mobile 3/Carbon6.png" class="img-fluid img-screenshot w-75" alt="Validasi Judul Transaksi">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Validasi Nominal Angka</h6>
+                        <p class="text-light opacity-75 small text-start">Kolom pengisian uang yang secara otomatis menampilkan papan ketik angka (`TextInputType.number`) dengan validasi keamanan ganda untuk memastikan format yang dimasukkan adalah bilangan bulat[cite: 6].</p>
+                        <img src="../../../Images/praktikum App Mobile 3/Carbon7.png" class="img-fluid img-screenshot w-75" alt="Validasi Nominal Angka">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Dropdown Menu Kategori</h6>
+                        <p class="text-light opacity-75 small text-start">Penerapan `DropdownButtonFormField` untuk memudahkan pemilihan kategori dari opsi yang telah disiapkan sebelumnya, dan menyimpan nilainya setiap kali ada perubahan[cite: 6].</p>
+                        <img src="../../../Images/praktikum App Mobile 3/Carbon8.png" class="img-fluid img-screenshot w-75" alt="Dropdown Menu Kategori">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Tombol Simpan & Logika Snackbar</h6>
+                        <p class="text-light opacity-75 small text-start">Sistem akan memverifikasi keseluruhan kondisi form ketika tombol ini ditekan. Jika validasi terpenuhi, aplikasi akan menampilkan pop-up sukses hijau (Snackbar)[cite: 6].</p>
+                        <img src="../../../Images/praktikum App Mobile 3/Carbon9.png" class="img-fluid img-screenshot w-75" alt="Tombol Simpan Logika Snackbar">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian Latihan -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-calendar-event"></i> Latihan: Implementasi Tanggal</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Deklarasi Controller Tanggal</h6>
+                        <p class="text-light opacity-75 small text-start">Menyiapkan satu lagi controller khusus yang dialokasikan untuk mendeteksi dan menangkap input jadwal transaksi pengguna[cite: 6].</p>
+                        <img src="../../../Images/praktikum App Mobile 3/Carbon10.png" class="img-fluid img-screenshot w-75" alt="Deklarasi Controller Tanggal">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Pemilih Tanggal Otomatis (Date Picker)</h6>
+                        <p class="text-light opacity-75 small text-start">Kolom input canggih yang dilengkapi ikon tambah (add) pada ujungnya untuk memicu jendela kalender pop-up, dipadukan juga dengan proteksi wajib isi[cite: 6].</p>
+                        <img src="../../../Images/praktikum App Mobile 3/Carbon11.png" class="img-fluid img-screenshot w-75" alt="Pemilih Tanggal Otomatis">
+                    </div>
+                </div>
+            </div>
+
+            <!-- Bagian Hasil UI -->
+            <div class="portfolio-card">
+                <h4 class="text-accent fw-bold mb-4"><i class="bi bi-phone"></i> Hasil Visualisasi Antarmuka</h4>
+                
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Antarmuka Bersih Formulir</h6>
+                        <p class="text-light opacity-75 small text-start">Potret kondisi awal formulir yang rapi saat aplikasi baru dibuka oleh pengguna, di mana belum ada kolom yang diintervensi[cite: 6].</p>
+                        <img src="../../../Images/praktikum App Mobile 3/Hasil1.png" class="img-fluid img-screenshot w-100" alt="Antarmuka Bersih Formulir">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center">
+                        <h6 class="fw-bold text-light text-start">Simulasi Error Validasi Sistem</h6>
+                        <p class="text-light opacity-75 small text-start">Tangkapan layar yang memperlihatkan respon cepat sistem menolak penyimpanan data jika masih terdapat baris merah karena ada yang belum terisi[cite: 6].</p>
+                        <img src="../../../Images/praktikum App Mobile 3/Hasil2.png" class="img-fluid img-screenshot w-100" alt="Simulasi Error Validasi Sistem">
+                    </div>
+                </div>
+
+                <div class="row justify-content-center">
+                    <div class="col-lg-8 step-container text-center border-0">
+                        <h6 class="fw-bold text-light text-start">Keberhasilan Penyimpanan Form</h6>
+                        <p class="text-light opacity-75 small text-start">Tampilan akhir ketika seluruh syarat input sudah terpenuhi. Sebuah notifikasi Snackbar muncul membawa kabar bahwa transaksi baru berhasil dicatat secara resmi[cite: 6].</p>
+                        <img src="../../../Images/praktikum App Mobile 3/Hasil3.png" class="img-fluid img-screenshot w-100" alt="Keberhasilan Penyimpanan Form">
+                    </div>
+                </div>
+            </div>
+
+            <div class="text-center mt-5 mb-3">
+                <a href="https://github.com/DD-Bin/PrakAppMob_B_2411533010" target="_blank" class="btn btn-outline-light mx-2">
+                    <i class="bi bi-github me-2"></i> Lihat Repository
+                </a>
+                <a href="../../Main/portofolio.html" class="btn btn-outline-light mx-2">
+                    <i class="bi bi-arrow-left me-2"></i> Kembali ke Portofolio
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="text-white pt-5 pb-3 border-top glass-bg">
+        <div class="container">
+            <div class="row">    
+                <div class="col-lg-6 col-md-6 mb-4 text-start">
+                    <h5 class="fw-bold" style="color: #B2C9AB;">DD</h5>
+                    <p class="small text-white-50">Website portofolio Dede Bintang Gafendi, mahasiswa Informatika Universitas Andalas</p>
+                </div>            
+                <div class="col-lg-6 col-md-6 mb-4 text-md-end text-start">
+                    <h5 class="fw-bold">Let's Connect</h5>
+                    <div class="d-flex justify-content-md-end justify-content-start mt-2">
+                        <a href="https://www.instagram.com/dd2_augh/" target="_blank" class="text-white me-3 fs-4 text-decoration-none">
+                            <i class="bi bi-instagram"></i>
+                        </a>
+                        <a href="https://github.com/DD-Bin" target="_blank" class="text-white fs-4 text-decoration-none">
+                            <i class="bi bi-github"></i>
+                        </a>
+                    </div>
+                </div>       
+            </div>    
+            <div class="text-center pt-3 border-top border-secondary">
+                <p class="small mb-0 text-white opacity-75">© 2025 Created with love by Dede Bintang Gafendi 💀</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
