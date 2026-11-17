@@ -14,12 +14,11 @@
 - `laprakPweb5.html` — template laporan praktikum web yang dapat disalin untuk laporan baru.
 
 ## Palet warna
-- Sun Yellow: `#F2C230`
-- Orange: `#F2921D`
-- Coral: `#F24F13`
-- Slate: `#8082A6`
-- Plum: `#46334F`
-- Background: `#17151B`
+- Turquoise: `#00BCC8`
+- Lime: `#D0FF00`
+- Teks utama: `#14282C`
+- Latar: `#F8FBFA`
+- Permukaan kartu: `#FFFFFF`
 
 ## Catatan penggunaan
 1. Simpan semua file HTML dan `styles.css` dalam folder yang sama.
