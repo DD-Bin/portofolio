@@ -69,25 +69,25 @@
             text-align: justify;
         }
     </style>
-    <link rel="stylesheet" href="../../Main/styles.css">
-    <link rel="stylesheet" href="../../Main/report.css">
-    <script src="../../Main/interactions.js" defer></script>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../report.css">
+    <script src="../../interactions.js" defer></script>
     </head>
 
 <body>
     
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark glass-bg">
         <div class="container">
-            <a class="navbar-brand fw-bold text-sage" href="../../Main/index.html">DD</a>
+            <a class="navbar-brand fw-bold text-sage" href="../../index.html">DD</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../../Main/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../../Main/about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="../../Main/portofolio.html">Portofolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../../Main/contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../portofolio.html">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -97,7 +97,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                
-                <a href="../../Main/portofolio.html" class="btn btn-outline-light mb-4 btn-sm rounded-pill">
+                <a href="../../portofolio.html" class="btn btn-outline-light mb-4 btn-sm rounded-pill">
                     <i class="bi bi-arrow-left"></i> Kembali ke Portfolio
                 </a>
 
@@ -129,51 +129,51 @@
                     </p>
                     <pre><code class="text-success">composer global require "laravel/installer"
 laravel new laravel-sisfo</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/1.png" class="img-fluid img-detail" alt="Arahkan Path dan Command New">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/2.png" class="img-fluid img-detail" alt="Upgrade Laravel Installer">
+                    <img src="../../Images/Praktikum Pemograman Web 4/1.png" class="img-fluid img-detail" alt="Arahkan Path dan Command New">
+                    <img src="../../Images/Praktikum Pemograman Web 4/2.png" class="img-fluid img-detail" alt="Upgrade Laravel Installer">
                     
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Selama proses pembuatan struktur, sistem memberikan opsi pemilihan <i>Starter Kit</i> dan sistem pengujian. Penulis memilih opsi tanpa starter kit (<code class="text-sage">None</code>) karena integrasi visual Bootstrap akan ditangani secara terpisah menggunakan pustaka UI eksternal, dengan memilih <code class="text-sage">Pest</code> sebagai <i>testing framework</i> bawaannya.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/3.png" class="img-fluid img-detail" alt="Pemilihan Starter Kit None">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/4.png" class="img-fluid img-detail" alt="Pemilihan Testing Framework Pest">
+                    <img src="../../Images/Praktikum Pemograman Web 4/3.png" class="img-fluid img-detail" alt="Pemilihan Starter Kit None">
+                    <img src="../../Images/Praktikum Pemograman Web 4/4.png" class="img-fluid img-detail" alt="Pemilihan Testing Framework Pest">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Tahap penataan berikutnya adalah menyesuaikan variabel konektivitas basis data pada file konfigurasi lingkungan <code class="text-sage">.env</code>. Pengaturan diatur menggunakan driver SQLite (<code class="text-sage">sqlite</code>) dengan penamaan skema database <code class="text-sage">laravel_sisfo</code>.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/5.png" class="img-fluid img-detail" alt="Konfigurasi Database .env SQLite">
+                    <img src="../../Images/Praktikum Pemograman Web 4/5.png" class="img-fluid img-detail" alt="Konfigurasi Database .env SQLite">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Aplikasi kemudian diuji menggunakan server lokal artisan. Antarmuka <i>welcome page</i> Laravel berhasil diekstrak dan disajikan secara normal pada alamat port <code class="text-sage">127.0.0.1:8000</code>.
                     </p>
                     <pre><code class="text-success">php artisan serve</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/6.png" class="img-fluid img-detail" alt="Command php artisan serve">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/7.png" class="img-fluid img-detail" alt="Halaman Selamat Datang Default Laravel">
+                    <img src="../../Images/Praktikum Pemograman Web 4/6.png" class="img-fluid img-detail" alt="Command php artisan serve">
+                    <img src="../../Images/Praktikum Pemograman Web 4/7.png" class="img-fluid img-detail" alt="Halaman Selamat Datang Default Laravel">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Untuk mempercepat pembuatan fitur pendaftaran dan autentikasi, penulis memasang dependensi paket <code class="text-sage">laravel/ui</code>, diikuti dengan menjalankan generator perintah Bootstrap berparameter otorisasi penuh:
                     </p>
                     <pre><code class="text-success">composer require laravel/ui
 php artisan ui bootstrap --auth</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/8.png" class="img-fluid img-detail" alt="Instalasi package laravel/ui via composer">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/9.png" class="img-fluid img-detail" alt="Proses locking versi laravel ui">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/10.png" class="img-fluid img-detail" alt="Eksekusi ui bootstrap auth scaffolding">
+                    <img src="../../Images/Praktikum Pemograman Web 4/8.png" class="img-fluid img-detail" alt="Instalasi package laravel/ui via composer">
+                    <img src="../../Images/Praktikum Pemograman Web 4/9.png" class="img-fluid img-detail" alt="Proses locking versi laravel ui">
+                    <img src="../../Images/Praktikum Pemograman Web 4/10.png" class="img-fluid img-detail" alt="Eksekusi ui bootstrap auth scaffolding">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Sebagai bagian dari instruksi kompilasi modul frontend baru, perintah manajemen paket <code class="text-sage">npm install</code> dijalankan untuk mengunduh modul aset, kemudian dilanjutkan dengan menjalankan perintah <code class="text-sage">npm run dev</code> demi mengaktifkan server build Vite secara langsung (real-time).
                     </p>
                     <pre><code class="text-success">npm install
 npm run dev</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/11.png" class="img-fluid img-detail" alt="Command npm install aset frontend">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/12.png" class="img-fluid img-detail" alt="Vite server runtime ready">
+                    <img src="../../Images/Praktikum Pemograman Web 4/11.png" class="img-fluid img-detail" alt="Command npm install aset frontend">
+                    <img src="../../Images/Praktikum Pemograman Web 4/12.png" class="img-fluid img-detail" alt="Vite server runtime ready">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Selanjutnya dilakukan eksekusi struktur tabel awal bawaan framework ke database menggunakan perintah migrasi. Halaman login (<code class="text-sage">/login</code>) dan registrasi (<code class="text-sage">/register</code>) kini siap diakses secara normal di peramban web dengan tampilan Bootstrap standar.
                     </p>
                     <pre><code class="text-success">php artisan migrate</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/13.png" class="img-fluid img-detail" alt="Artisan Migrate default sukses">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/14.png" class="img-fluid img-detail" alt="Form login otorisasi default">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/15.png" class="img-fluid img-detail" alt="Form registrasi pengguna baru default">
+                    <img src="../../Images/Praktikum Pemograman Web 4/13.png" class="img-fluid img-detail" alt="Artisan Migrate default sukses">
+                    <img src="../../Images/Praktikum Pemograman Web 4/14.png" class="img-fluid img-detail" alt="Form login otorisasi default">
+                    <img src="../../Images/Praktikum Pemograman Web 4/15.png" class="img-fluid img-detail" alt="Form registrasi pengguna baru default">
 
                     <hr class="border-secondary mb-5">
 
@@ -181,49 +181,49 @@ npm run dev</code></pre>
                     <p class="text-light opacity-75 text-justify">
                         Penulis mencoba melakukan pendaftaran akun pengujian pertama bernama <b>Dede Bintang</b>. Akun berhasil dibuat dan otomatis dialihkan masuk ke dalam komponen beranda otorisasi internal (<code class="text-sage">/home</code>).
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/16.png" class="img-fluid img-detail" alt="Tampilan dashboard sukses login">
+                    <img src="../../Images/Praktikum Pemograman Web 4/16.png" class="img-fluid img-detail" alt="Tampilan dashboard sukses login">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Untuk memverifikasi integritas data, penulis memeriksa baris record tabel <code class="text-sage">users</code> yang baru tersimpan melalui platform administrasi basis data phpMyAdmin. Informasi data masukan, enkripsi sandi, beserta <i>timestamp</i> tercatat secara presisi.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/17.png" class="img-fluid img-detail" alt="Isi baris record tabel users di phpmyadmin">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/18.png" class="img-fluid img-detail" alt="Skema kolom bawaan tabel users">
+                    <img src="../../Images/Praktikum Pemograman Web 4/17.png" class="img-fluid img-detail" alt="Isi baris record tabel users di phpmyadmin">
+                    <img src="../../Images/Praktikum Pemograman Web 4/18.png" class="img-fluid img-detail" alt="Skema kolom bawaan tabel users">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Sesuai spesifikasi kebutuhan Sistem Informasi Sekolah, skema default tabel ini perlu dimodifikasi dengan menambahkan tiga kolom baru yaitu <code class="text-sage">username</code>, <code class="text-sage">level</code>, dan <code class="text-sage">status</code>. Penulis menghasilkan berkas modifikasi skema lewat perintah migrasi kustom:
                     </p>
                     <pre><code class="text-success">php artisan make:migration costum_table_users</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/19.png" class="img-fluid img-detail" alt="Generate file migration custom_table_users">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/20.png" class="img-fluid img-detail" alt="Letak file migrasi pada struktur folder">
+                    <img src="../../Images/Praktikum Pemograman Web 4/19.png" class="img-fluid img-detail" alt="Generate file migration custom_table_users">
+                    <img src="../../Images/Praktikum Pemograman Web 4/20.png" class="img-fluid img-detail" alt="Letak file migrasi pada struktur folder">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Berkas baru tersebut kemudian dimodifikasi pada bagian blok fungsi metode <code class="text-sage">up()</code> dan fungsi rollback metode <code class="text-sage">down()</code> seperti pada contoh kode program berikut:
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/21.png" class="img-fluid img-detail" alt="Source code isi file migrasi penambahan kolom">
+                    <img src="../../Images/Praktikum Pemograman Web 4/21.png" class="img-fluid img-detail" alt="Source code isi file migrasi penambahan kolom">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Perintah migrasi dijalankan ulang untuk memperbarui skema database. Setelah berhasil dieksekusi, kolom tambahan berupa username, level, dan enum status terstruktur dengan benar pada baris bawah tabel users di phpMyAdmin.
                     </p>
                     <pre><code class="text-success">php artisan migrate</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/22.png" class="img-fluid img-detail" alt="Eksekusi artisan migrate sukses">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/23.png" class="img-fluid img-detail" alt="Struktur tabel users yang telah dikustomisasi">
+                    <img src="../../Images/Praktikum Pemograman Web 4/22.png" class="img-fluid img-detail" alt="Eksekusi artisan migrate sukses">
+                    <img src="../../Images/Praktikum Pemograman Web 4/23.png" class="img-fluid img-detail" alt="Struktur tabel users yang telah dikustomisasi">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Untuk mempermudah proses pengisian data pengguna berlevel administrator secara instan tanpa registrasi manual, dibuat sebuah berkas komponen <i>seeder</i> baru melalui terminal:
                     </p>
                     <pre><code class="text-success">php artisan make:seeder AdminSeeder</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/24.png" class="img-fluid img-detail" alt="Generate AdminSeeder file">
+                    <img src="../../Images/Praktikum Pemograman Web 4/24.png" class="img-fluid img-detail" alt="Generate AdminSeeder file">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Pada file <code class="text-sage">AdminSeeder.php</code>, dituliskan logika instansiasi objek model pengguna baru dengan parameter level yang dibungkus ke dalam format JSON (<code class="text-sage">json_encode</code>) demi mendukung skalabilitas hak akses majemuk (multiple roles):
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/25.png" class="img-fluid img-detail" alt="Implementasi kode program seeder pengguna admin">
+                    <img src="../../Images/Praktikum Pemograman Web 4/25.png" class="img-fluid img-detail" alt="Implementasi kode program seeder pengguna admin">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Proses seeding dijalankan dengan memanggil sub-class spesifik tersebut melalui terminal CLI:
                     </p>
                     <pre><code class="text-success">php artisan db:seed --class=AdminSeeder</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/26.png" class="img-fluid img-detail" alt="Eksekusi db seed sukses">
+                    <img src="../../Images/Praktikum Pemograman Web 4/26.png" class="img-fluid img-detail" alt="Eksekusi db seed sukses">
 
                     <hr class="border-secondary mb-5">
 
@@ -231,41 +231,41 @@ npm run dev</code></pre>
                     <p class="text-light opacity-75 text-justify">
                         Agar tampilan antarmuka terkesan profesional, penulis melakukan proses <i>slicing template</i> gratis <b>SB Admin 2</b> berbasis framework Bootstrap 4. Langkah awal dilakukan dengan menyalin seluruh direktori folder aset statis bawaan template (CSS, JS, Vendor) ke dalam folder <code class="text-sage">public/sbadmin</code> milik Laravel.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/30.png" class="img-fluid img-detail" alt="Halaman unduh SB Admin 2 StartBootstrap">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/31.png" class="img-fluid img-detail" alt="Penyusunan folder aset di public/sbadmin">
+                    <img src="../../Images/Praktikum Pemograman Web 4/30.png" class="img-fluid img-detail" alt="Halaman unduh SB Admin 2 StartBootstrap">
+                    <img src="../../Images/Praktikum Pemograman Web 4/31.png" class="img-fluid img-detail" alt="Penyusunan folder aset di public/sbadmin">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Selanjutnya dilakukan perombakan berkas layout master bawaan paket auth (<code class="text-sage">resources/views/layouts/app.blade.php</code>) untuk memuat kerangka dasar HTML halaman login SB Admin 2, dengan memanggil seluruh berkas aset menggunakan helper bawaan Laravel <code class="text-sage">{{ asset(...) }}</code>.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/32.png" class="img-fluid img-detail" alt="Konfigurasi tag head link asset app.blade">
+                    <img src="../../Images/Praktikum Pemograman Web 4/32.png" class="img-fluid img-detail" alt="Konfigurasi tag head link asset app.blade">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Guna merancang halaman kerja internal setelah login, penulis menerapkan teknik modulasi antarmuka dengan membuat sebuah file layout utama baru bernama <code class="text-sage">main.blade.php</code> di dalam folder layouts.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/33.png" class="img-fluid img-detail" alt="Pembuatan file main.blade.php layouts">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/34.png" class="img-fluid img-detail" alt="Struktur tag pembuka main layout">
+                    <img src="../../Images/Praktikum Pemograman Web 4/33.png" class="img-fluid img-detail" alt="Pembuatan file main.blade.php layouts">
+                    <img src="../../Images/Praktikum Pemograman Web 4/34.png" class="img-fluid img-detail" alt="Struktur tag pembuka main layout">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Struktur layout dashboard yang besar dipecah ke dalam beberapa file parsial menggunakan direktif blade <code class="text-sage">@include()</code>. Penulis membuat file <code class="text-sage">sidebar.blade.php</code> untuk menampung baris kode komponen navigasi menu samping:
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/35.png" class="img-fluid img-detail" alt="Pembuatan berkas blade komponen sidebar">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/36.png" class="img-fluid img-detail" alt="Modifikasi item menu navigasi sidebar">
+                    <img src="../../Images/Praktikum Pemograman Web 4/35.png" class="img-fluid img-detail" alt="Pembuatan berkas blade komponen sidebar">
+                    <img src="../../Images/Praktikum Pemograman Web 4/36.png" class="img-fluid img-detail" alt="Modifikasi item menu navigasi sidebar">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Hal yang sama diterapkan pada komponen bar navigasi atas melalui pembuatan file <code class="text-sage">topbar.blade.php</code>, yang memuat potongan kode pencarian, notifikasi sistem, dan menu profil pengguna:
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/37.png" class="img-fluid img-detail" alt="Pembuatan berkas blade komponen topbar">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/38.png" class="img-fluid img-detail" alt="Source code struktur navbar atas topbar">
+                    <img src="../../Images/Praktikum Pemograman Web 4/37.png" class="img-fluid img-detail" alt="Pembuatan berkas blade komponen topbar">
+                    <img src="../../Images/Praktikum Pemograman Web 4/38.png" class="img-fluid img-detail" alt="Source code struktur navbar atas topbar">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Komponen view beranda (<code class="text-sage">home.blade.php</code>) diatur kembali agar mewarisi layout utama baru dengan menambahkan fungsi direktif pewarisan <code class="text-sage">@extends('layouts.main')</code>.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/39.png" class="img-fluid img-detail" alt="Pewarisan kerangka master layout pada home blade">
+                    <img src="../../Images/Praktikum Pemograman Web 4/39.png" class="img-fluid img-detail" alt="Pewarisan kerangka master layout pada home blade">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Hasil pengujian render pada browser menunjukkan layout dashboard admin berhasil memuat kombinasi sidebar biru minimalis khas SB Admin 2 secara fungsional dan responsif.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/40.png" class="img-fluid img-detail" alt="Hasil render antarmuka dashboard utama">
+                    <img src="../../Images/Praktikum Pemograman Web 4/40.png" class="img-fluid img-detail" alt="Hasil render antarmuka dashboard utama">
 
                     <hr class="border-secondary mb-5">
 
@@ -274,9 +274,9 @@ npm run dev</code></pre>
                         Inti fitur pengerjaan modul manajemen data dilakukan dengan membuat sebuah file controller terintegrasi metode resource lewat satu instruksi praktis pada terminal:
                     </p>
                     <pre><code class="text-success">php artisan make:controller UserController --resource</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/41.png" class="img-fluid img-detail" alt="Generate UserController via resource command">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/42.png" class="img-fluid img-detail" alt="Letak controller baru pada pohon direktori">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/43.png" class="img-fluid img-detail" alt="Blueprint fungsi bawaan resource controller">
+                    <img src="../../Images/Praktikum Pemograman Web 4/41.png" class="img-fluid img-detail" alt="Generate UserController via resource command">
+                    <img src="../../Images/Praktikum Pemograman Web 4/42.png" class="img-fluid img-detail" alt="Letak controller baru pada pohon direktori">
+                    <img src="../../Images/Praktikum Pemograman Web 4/43.png" class="img-fluid img-detail" alt="Blueprint fungsi bawaan resource controller">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Di bawah ini adalah rincian pengerjaan alur operasi logika CRUD data pengguna yang diimplementasikan ke dalam metode fungsi UserController beserta pembuatan file komponen view-nya:
@@ -286,49 +286,49 @@ npm run dev</code></pre>
                     <p class="text-light opacity-75 text-justify">
                         Pada tindakan fungsi <code class="text-sage">create()</code>, instruksi diarahkan untuk memanggil halaman form input data pengguna (<code class="text-sage">user.create</code>). Berkas view tersebut diletakkan di dalam folder terpisah bernama <code class="text-sage">resources/views/user/create.blade.php</code>.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/44.png" class="img-fluid img-detail" alt="Penulisan return view create">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/45.png" class="img-fluid img-detail" alt="Letak folder views kustom user">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/46.png" class="img-fluid img-detail" alt="Pewarisan layout master pada form create">
+                    <img src="../../Images/Praktikum Pemograman Web 4/44.png" class="img-fluid img-detail" alt="Penulisan return view create">
+                    <img src="../../Images/Praktikum Pemograman Web 4/45.png" class="img-fluid img-detail" alt="Letak folder views kustom user">
+                    <img src="../../Images/Praktikum Pemograman Web 4/46.png" class="img-fluid img-detail" alt="Pewarisan layout master pada form create">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Form tambah user dibangun menggunakan elemen form Bootstrap grid, lengkap dengan komponen selektor bertipe <i>list-box multiple select</i> untuk menentukan peran (level) jabatan pengguna aplikasi.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/47.png" class="img-fluid img-detail" alt="Rancangan form input data name dan email">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/48.png" class="img-fluid img-detail" alt="Pengujian render view halaman create">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/52.png" class="img-fluid img-detail" alt="Visualisasi form input pengguna baru lengkap">
+                    <img src="../../Images/Praktikum Pemograman Web 4/47.png" class="img-fluid img-detail" alt="Rancangan form input data name dan email">
+                    <img src="../../Images/Praktikum Pemograman Web 4/48.png" class="img-fluid img-detail" alt="Pengujian render view halaman create">
+                    <img src="../../Images/Praktikum Pemograman Web 4/52.png" class="img-fluid img-detail" alt="Visualisasi form input pengguna baru lengkap">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Proses penyimpanan data ditangani oleh tindakan fungsi <code class="text-sage">store()</code>. Fungsi menangkap parameter input dari form masukan, melakukan hashing pada field kata sandi (<code class="text-sage">Hash::make</code>), mengonversi nilai array level ke format teks JSON via <code class="text-sage">json_encode</code>, lalu menyimpannya ke database sebelum dialihkan kembali menuju halaman indeks utama dengan membawa status flash data.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/53.png" class="img-fluid img-detail" alt="Logika pengisian record objek pengguna baru">
+                    <img src="../../Images/Praktikum Pemograman Web 4/53.png" class="img-fluid img-detail" alt="Logika pengisian record objek pengguna baru">
 
                     <h4 class="text-sage h6 mt-4">B. Operasi READ (Menampilkan Tabel Daftar Pengguna)</h4>
                     <p class="text-light opacity-75 text-justify">
                         Metode fungsi <code class="text-sage">index()</code> bertugas mengambil seluruh koleksi baris data dari database menggunakan metode Eloquent model <code class="text-sage">User::all()</code>, kemudian mengirimkannya ke file view indeks.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/54.png" class="img-fluid img-detail" alt="Logika penarikan seluruh data users">
+                    <img src="../../Images/Praktikum Pemograman Web 4/54.png" class="img-fluid img-detail" alt="Logika penarikan seluruh data users">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Pada file <code class="text-sage">index.blade.php</code>, data pengguna diulang ke dalam bentuk baris-baris tabel HTML secara dinamis menggunakan perulangan direktif <code class="text-sage">@foreach ($users as $user)</code>.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/55.png" class="img-fluid img-detail" alt="Struktur tabel data dinamis index blade">
+                    <img src="../../Images/Praktikum Pemograman Web 4/55.png" class="img-fluid img-detail" alt="Struktur tabel data dinamis index blade">
 
                     <h4 class="text-sage h6 mt-4">C. Operasi UPDATE (Mengubah Data Pengguna)</h4>
                     <p class="text-light opacity-75 text-justify">
                         Untuk menangani proses pengeditan data, tindakan fungsi <code class="text-sage">edit($id)</code> dipasang perintah penarikan data pengguna spesifik berdasarkan parameter ID unik menggunakan pengaman kegagalan fatal query <code class="text-sage">User::findOrFail($id)</code>.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/57.png" class="img-fluid img-detail" alt="Logika pencarian objek user berdasarkan ID">
+                    <img src="../../Images/Praktikum Pemograman Web 4/57.png" class="img-fluid img-detail" alt="Logika pencarian objek user berdasarkan ID">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Form edit (<code class="text-sage">edit.blade.php</code>) dirancang mirip dengan form tambah data, namun dilengkapi dengan pengiriman metode tersembunyi <code class="text-sage">&lt;input type="hidden" name="_method" value="PUT"&gt;</code> serta otomatis mengisi kolom input form (<i>old value/current data binding</i>) sesuai data pengguna yang akan disunting.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/58.png" class="img-fluid img-detail" alt="Struktur tag form dengan method spoofing PUT">
-                    <img src="../../../Images/Praktikum Pemograman Web 4/59.png" class="img-fluid img-detail" alt="Visualisasi form edit dengan data binding user admin">
+                    <img src="../../Images/Praktikum Pemograman Web 4/58.png" class="img-fluid img-detail" alt="Struktur tag form dengan method spoofing PUT">
+                    <img src="../../Images/Praktikum Pemograman Web 4/59.png" class="img-fluid img-detail" alt="Visualisasi form edit dengan data binding user admin">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Logika pembaruan data diproses di dalam tindakan fungsi <code class="text-sage">update()</code>. Data nama pengguna dan level hak akses diperbarui, lalu disimpan kembali ke tabel basis data lewat pemanggilan metode interaksi <code class="text-sage">$user->save()</code>.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/60.png" class="img-fluid img-detail" alt="Logika penulisan update data pengguna">
+                    <img src="../../Images/Praktikum Pemograman Web 4/60.png" class="img-fluid img-detail" alt="Logika penulisan update data pengguna">
 
                     <hr class="border-secondary mb-5">
 
@@ -340,12 +340,12 @@ npm run dev</code></pre>
                     <p class="text-light opacity-75 text-justify">
                         Penulis mencoba menyunting record data pengguna "admin" menjadi nama kustom baru berupa "abinnnnnn" berlevel ADMIN pada halaman form edit user:
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/61.png" class="img-fluid img-detail" alt="Pengujian pengisian form edit modifikasi nama pengguna">
+                    <img src="../../Images/Praktikum Pemograman Web 4/61.png" class="img-fluid img-detail" alt="Pengujian pengisian form edit modifikasi nama pengguna">
 
                     <p class="text-light opacity-75 mt-4 text-justify">
                         Setelah menekan tombol "Simpan", sistem berhasil memproses perubahan data tersebut di latar belakang dan secara otomatis mengalihkan pengguna kembali ke halaman indeks utama. Halaman web sukses menampilkan banner pesan sukses hijau kustom bertuliskan <b>"User berhasil diubah"</b>, serta memperbarui isi data pada baris tabel pengguna dengan benar.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 4/62.png" class="img-fluid img-detail" alt="Tampilan tabel data pengguna hasil operasi CRUD sukses">
+                    <img src="../../Images/Praktikum Pemograman Web 4/62.png" class="img-fluid img-detail" alt="Tampilan tabel data pengguna hasil operasi CRUD sukses">
                 </div>
                 
                 <div class="laprak-content">

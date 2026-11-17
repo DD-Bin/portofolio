@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laporan Praktikum App Mobile 7</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../Main/styles.css">
+    <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
@@ -94,24 +94,24 @@
             opacity: 0.9;
         }
     </style>
-    <link rel="stylesheet" href="../../Main/report.css">
-    <script src="../../Main/interactions.js" defer></script>
+    <link rel="stylesheet" href="../../report.css">
+    <script src="../../interactions.js" defer></script>
     </head>
 <body>
     
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark glass-bg">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="../../Main/index.html" style="color: #B2C9AB;">DD</a>
+            <a class="navbar-brand fw-bold" href="../../index.html" style="color: #B2C9AB;">DD</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../../Main/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../../Main/about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="../../Main/portofolio.html">Portofolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../../Main/contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../portofolio.html">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -140,7 +140,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Checkpoint 1: Asset Gambar dan Custom Font</h6>
                         <p class="text-light opacity-75 small text-start">Tampilan awal aplikasi yang telah mengimplementasikan custom font Poppins untuk seluruh tipografi serta menambahkan asset lokal berupa logo aplikasi pada AppBar.</p>
-                        <img src="../../../Images/praktikum App Mobile 7/Checkpoint1.png" class="img-fluid img-screenshot w-100" alt="Checkpoint 1">
+                        <img src="../../Images/praktikum App Mobile 7/Checkpoint1.png" class="img-fluid img-screenshot w-100" alt="Checkpoint 1">
                     </div>
                 </div>
 
@@ -148,7 +148,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Checkpoint 2: ListView dan Image.network</h6>
                         <p class="text-light opacity-75 small text-start">Penerapan <code>ListView.builder</code> untuk merender daftar resep secara dinamis, dilengkapi dengan pengambilan gambar (thumbnail) dari internet menggunakan <code>Image.network</code>.</p>
-                        <img src="../../../Images/praktikum App Mobile 7/Checkpoint2.png" class="img-fluid img-screenshot w-100" alt="Checkpoint 2">
+                        <img src="../../Images/praktikum App Mobile 7/Checkpoint2.png" class="img-fluid img-screenshot w-100" alt="Checkpoint 2">
                     </div>
                 </div>
 
@@ -156,7 +156,7 @@
                     <div class="col-lg-8 step-container text-center border-0">
                         <h6 class="fw-bold text-light text-start">Checkpoint 2b: Error State Gambar</h6>
                         <p class="text-light opacity-75 small text-start">Pengujian <i>errorBuilder</i> pada pemuatan gambar dari internet. Saat gambar gagal dimuat (misal karena URL tidak valid atau jaringan terputus), aplikasi memunculkan gambar placeholder berupa ikon piring dari asset lokal alih-alih menampilkan error merah yang merusak UI.</p>
-                        <img src="../../../Images/praktikum App Mobile 7/Checkpoint2b.png" class="img-fluid img-screenshot w-100" alt="Checkpoint 2b Error State">
+                        <img src="../../Images/praktikum App Mobile 7/Checkpoint2b.png" class="img-fluid img-screenshot w-100" alt="Checkpoint 2b Error State">
                     </div>
                 </div>
             </div>
@@ -169,7 +169,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Tampilan Halaman Detail dengan Porsi Aktif</h6>
                         <p class="text-light opacity-75 small text-start">Halaman detail resep yang telah diperbarui, menampilkan foto makanan dengan proporsi besar di bagian atas.</p>
-                        <img src="../../../Images/praktikum App Mobile 7/LangkahC3.png" class="img-fluid img-screenshot w-100" alt="Langkah C3 Detail Image">
+                        <img src="../../Images/praktikum App Mobile 7/LangkahC3.png" class="img-fluid img-screenshot w-100" alt="Langkah C3 Detail Image">
                     </div>
                 </div>
 
@@ -220,7 +220,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Tampilan GridView dengan Tombol Toggle</h6>
                         <p class="text-light opacity-75 small text-start">Perubahan antarmuka menjadi mode grid melalui <code>GridView.builder</code>. Aplikasi kini menampilkan resep berupa kartu dua kolom dengan rasio aspect 3:4. Status favorit (ikon hati merah) disinkronkan secara global dari Provider.</p>
-                        <img src="../../../Images/praktikum App Mobile 7/Checkpoint3.png" class="img-fluid img-screenshot w-100" alt="Checkpoint 3 GridView">
+                        <img src="../../Images/praktikum App Mobile 7/Checkpoint3.png" class="img-fluid img-screenshot w-100" alt="Checkpoint 3 GridView">
                     </div>
                 </div>
 
@@ -228,7 +228,7 @@
                     <div class="col-lg-8 step-container text-center border-0">
                         <h6 class="fw-bold text-light text-start">Akses Detail dari Mode Grid</h6>
                         <p class="text-light opacity-75 small text-start">Kartu resep pada antarmuka grid telah dibungkus menggunakan <code>InkWell</code> sehingga dapat ditekan untuk melakukan transisi navigasi menuju layar detail dengan mempertahankan identitas resep yang dipilih.</p>
-                        <img src="../../../Images/praktikum App Mobile 7/Checkpoint3b.png" class="img-fluid img-screenshot w-100" alt="Checkpoint 3b Detail Navigasi">
+                        <img src="../../Images/praktikum App Mobile 7/Checkpoint3b.png" class="img-fluid img-screenshot w-100" alt="Checkpoint 3b Detail Navigasi">
                     </div>
                 </div>
             </div>
@@ -296,7 +296,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Latihan 1: ChoiceChip Filter Kategori (Cuisine)</h6>
                         <p class="text-light opacity-75 small text-start">Implementasi fitur penyaringan resep masakan berbasis kategori menggunakan widget <code>ChoiceChip</code> horizontal yang ditempatkan persis di bawah AppBar.</p>
-                        <img src="../../../Images/praktikum App Mobile 7/Latihan1.png" class="img-fluid img-screenshot w-100" alt="Latihan 1 Choice Chip">
+                        <img src="../../Images/praktikum App Mobile 7/Latihan1.png" class="img-fluid img-screenshot w-100" alt="Latihan 1 Choice Chip">
                     </div>
                 </div>
 
@@ -304,7 +304,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Latihan 2: Manajemen Halaman Favorit dengan Dismissible</h6>
                         <p class="text-light opacity-75 small text-start">Pembaharuan halaman favorit yang kini menyertakan fitur usap (swipe) untuk menghapus menggunakan widget <code>Dismissible</code>, lengkap dengan notifikasi peringatan (SnackBar).</p>
-                        <img src="../../../Images/praktikum App Mobile 7/Latihan2.png" class="img-fluid img-screenshot w-100" alt="Latihan 2 Dismissible">
+                        <img src="../../Images/praktikum App Mobile 7/Latihan2.png" class="img-fluid img-screenshot w-100" alt="Latihan 2 Dismissible">
                     </div>
                 </div>
 
@@ -312,7 +312,7 @@
                     <div class="col-lg-8 step-container text-center border-0">
                         <h6 class="fw-bold text-light text-start">Latihan 3: CustomScrollView dan SliverAppBar</h6>
                         <p class="text-light opacity-75 small text-start">Pemugaran tampilan halaman detail menggunakan <code>CustomScrollView</code>. Konfigurasi ini menyematkan foto sebagai background <code>SliverAppBar</code> yang akan berinteraksi responsif mengecil menyesuaikan sapuan layar ketika halaman di-scroll ke bawah.</p>
-                        <img src="../../../Images/praktikum App Mobile 7/Latihan3.png" class="img-fluid img-screenshot w-100" alt="Latihan 3 Sliver App Bar">
+                        <img src="../../Images/praktikum App Mobile 7/Latihan3.png" class="img-fluid img-screenshot w-100" alt="Latihan 3 Sliver App Bar">
                     </div>
                 </div>
             </div>
@@ -351,7 +351,7 @@
             </div>
 
             <div class="text-center mt-5 mb-3">
-                <a href="../../Main/portofolio.html" class="btn btn-outline-light mx-2">
+                <a href="../../portofolio.html" class="btn btn-outline-light mx-2">
                     <i class="bi bi-arrow-left me-2"></i> Kembali ke Portofolio
                 </a>
             </div>

@@ -6,7 +6,7 @@
     <title>Laporan Praktikum - Migration, Seeding, & MVC</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
-    <link rel="stylesheet" href="../../Main/styles.css">
+    <link rel="stylesheet" href="../../styles.css">
     <style>
         .laprak-content {
             background: rgba(255, 255, 255, 0.05);
@@ -27,21 +27,21 @@
         code { color: #B2C9AB; }
         pre { background: rgba(0,0,0,0.5); padding: 15px; border-radius: 8px; }
     </style>
-    <link rel="stylesheet" href="../../Main/report.css">
-    <script src="../../Main/interactions.js" defer></script>
+    <link rel="stylesheet" href="../../report.css">
+    <script src="../../interactions.js" defer></script>
     </head>
 
 <body>
     
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark glass-bg">
         <div class="container">
-            <a class="navbar-brand" href="../../Main/index.html">DD</a>
+            <a class="navbar-brand" href="../../index.html">DD</a>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../../Main/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../../Main/about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="../../Main/portofolio.html">Portofolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../../Main/contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../portofolio.html">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -51,13 +51,13 @@
 <section class="container-portofolio container py-5">
     <div class="row justify-content-center">
         <div class="col-lg-10">
-            <a href="../../Main/portofolio.html" class="btn btn-outline-light mb-4 btn-sm">
+            <a href="../../portofolio.html" class="btn btn-outline-light mb-4 btn-sm">
                 <i class="bi bi-arrow-left"></i> Kembali ke Portofolio
             </a>
 
             <div class="laprak-header text-center mb-5">
                 <div class="thumbnail-container mb-4" style="width: 100%; max-height: 450px; overflow: hidden; border-radius: 20px; border: 1px solid rgba(255, 255, 255, 0.1); box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);">
-                    <img src="../../../Images/Praktikum Pemograman Web 2/Screenshot 2026-05-27 190654.png" class="thumbnail-img" alt="Thumbnail Laporan" style="width: 100%; height: 100%; object-fit: cover;">
+                    <img src="../../Images/Praktikum Pemograman Web 2/Screenshot 2026-05-27 190654.png" class="thumbnail-img" alt="Thumbnail Laporan" style="width: 100%; height: 100%; object-fit: cover;">
                 </div>
                 
                 <span class="badge bg-warning text-dark mb-2">Pemrograman Web</span>
@@ -78,91 +78,91 @@
                     Langkah pertama dimulai dengan membuat file skema migration baru untuk tabel produk melalui terminal menggunakan perintah Artisan CLI:
                 </p>
                 <pre class="bg-black p-2 rounded"><code class="text-success">php artisan make:migration create_products_table</code></pre>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.1.png" class="img-fluid img-detail" alt="Pembuatan Migration Sukses">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.1.png" class="img-fluid img-detail" alt="Pembuatan Migration Sukses">
 
                 <p class="text-light opacity-75">
                     Setelah berkas berhasil digenerate, struktur skema kolom tabel didefinisikan di dalam method <code>up()</code> pada file direktori <code>database/migrations/</code>. Atribut tabel diatur untuk mengelola field berupa <code>id</code>, <code>name</code> (string), <code>price</code> (integer), <code>description</code> (text), serta kolom penanda waktu otomatis <code>timestamps</code>.
                 </p>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.2.png" class="img-fluid img-detail" alt="Struktur File Migration">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.2.png" class="img-fluid img-detail" alt="Struktur File Migration">
 
                 <h3 class="text-light mt-4 mb-3">2. Database Seeding</h3>
                 <p class="text-light opacity-75">
                     Seeding digunakan untuk mempersiapkan data uji coba awal ke dalam tabel basis data. Pembuatan komponen class seeder baru dieksekusi melalui baris perintah terminal berikut:
                 </p>
                 <pre class="bg-black p-2 rounded"><code class="text-success">php artisan make:seeder ProductSeeder</code></pre>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.3.png" class="img-fluid img-detail" alt="Error Pembuatan Seeder">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.3.png" class="img-fluid img-detail" alt="Error Pembuatan Seeder">
 
                 <p class="text-light opacity-75">
                     Selanjutnya, pemanggilan eksekusi <code>ProductSeeder</code> didaftarkan ke dalam method <code>run()</code> pada file master <code>database/seeders/DatabaseSeeder.php</code> agar dapat dipanggil serentak oleh sistem.
                 </p>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.4.png" class="img-fluid img-detail" alt="Registrasi di DatabaseSeeder">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.4.png" class="img-fluid img-detail" alt="Registrasi di DatabaseSeeder">
 
                 <p class="text-light opacity-75">
                     Di dalam berkas file komponen <code>ProductSeeder.php</code>, logika pengisian record data diimplementasikan menggunakan Query Builder <code>DB::table('products')->insert()</code> untuk memasukkan dua item produk dummy, yaitu data spesifikasi objek <b>Laptop</b> dan <b>Mouse</b> lengkap beserta penanda waktu <code>now()</code>.
                 </p>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.5.png" class="img-fluid img-detail" alt="Implementasi Isi ProductSeeder">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.5.png" class="img-fluid img-detail" alt="Implementasi Isi ProductSeeder">
 
                 <p class="text-light opacity-75">
                     Berikut adalah detail kode potongan registrasi pemanggilan sub-class seeder produk di dalam file master penanggung jawab basis data:
                 </p>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.6.png" class="img-fluid img-detail" alt="Detail Kode Panggilan Seeder">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.6.png" class="img-fluid img-detail" alt="Detail Kode Panggilan Seeder">
 
                 <p class="text-light opacity-75">
                     Untuk mengeksekusi pengisian data saja ke dalam tabel, perintah artisan berikut dapat dijalankan langsung di terminal:
                 </p>
                 <pre class="bg-black p-2 rounded"><code class="text-success">php artisan db:seed</code></pre>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.7.png" class="img-fluid img-detail" alt="Command DB Seed">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.7.png" class="img-fluid img-detail" alt="Command DB Seed">
 
                 <p class="text-light opacity-75">
                     Sedangkan untuk membangun ulang seluruh struktur skema tabel dari awal (*drop-and-recreate*) sekaligus menjalankan fungsi pengisian baris data dummy di terminal, digunakan perintah kombinasi fresh seed berikut:
                 </p>
                 <pre class="bg-black p-2 rounded"><code class="text-success">php artisan migrate:fresh --seed</code></pre>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.8.png" class="img-fluid img-detail" alt="Command Migrate Fresh Seed">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.8.png" class="img-fluid img-detail" alt="Command Migrate Fresh Seed">
 
                 <h3 class="text-light mt-4 mb-3">3. Konfigurasi Web Routing</h3>
                 <p class="text-light opacity-75">
                     Perutean sistem dikonfigurasi di dalam berkas file <code>routes/web.php</code>. Pada praktikum ini, ditambahkan sebuah rute endpoint baru dengan metode HTTP GET ke URL rute <code>/products</code> yang diarahkan langsung untuk memicu method <code>index</code> milik class <code>ProductController</code>.
                 </p>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.9.png" class="img-fluid img-detail" alt="Arsitektur Web Routing">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.9.png" class="img-fluid img-detail" alt="Arsitektur Web Routing">
 
                 <h3 class="text-light mt-4 mb-3">4. Implementasi Model dan Controller (MVC)</h3>
                 <p class="text-light opacity-75">
                     Sebuah model data Eloquent bernama <code>Product.php</code> diimplementasikan di folder <code>app/Models/</code>. Properti berupa properti array protected <code>$fillable</code> disisipkan untuk mengamankan data field kolom mana saja yang diizinkan sistem saat melakukan operasi pengisian mass-assignment.
                 </p>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.10.png" class="img-fluid img-detail" alt="Model Product Eloquent">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.10.png" class="img-fluid img-detail" alt="Model Product Eloquent">
 
                 <p class="text-light opacity-75">
                     Pembuatan komponen class logic controller baru didefinisikan menggunakan perintah baris terminal berikut:
                 </p>
                 <pre class="bg-black p-2 rounded"><code class="text-success">php artisan make:controller ProductController</code></pre>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.11.png" class="img-fluid img-detail" alt="Error Pembuatan Controller">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.11.png" class="img-fluid img-detail" alt="Error Pembuatan Controller">
 
                 <p class="text-light opacity-75">
                     Di dalam berkas file <code>ProductController.php</code>, dituliskan sebuah method logika bernama <code>index()</code>. Fungsi dari kode ini adalah menarik seluruh isi baris data produk dari database menggunakan method ORM master <code>Product::all()</code>, lalu meneruskannya langsung ke view penampil bernama `products` menggunakan bantuan fungsi bawaan <code>compact()</code>.
                 </p>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.12.png" class="img-fluid img-detail" alt="Logika File ProductController">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.12.png" class="img-fluid img-detail" alt="Logika File ProductController">
 
                 <p class="text-light opacity-75">
                     Berikut adalah visualisasi baris pendaftaran rute controller terintegrasi di dalam file konfigurasi rute web utama:
                 </p>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.13.png" class="img-fluid img-detail" alt="Detail Baris Controller Route">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.13.png" class="img-fluid img-detail" alt="Detail Baris Controller Route">
 
                 <p class="text-light opacity-75">
                     Diujikan juga alternatif pembuatan rancangan arsitektur controller berskala penuh menggunakan flag option `--resource` bawaan framework untuk mempermudah pengerjaan operasi CRUD kompleks di masa mendatang:
                 </p>
                 <pre class="bg-black p-2 rounded"><code class="text-success">php artisan make:controller ProductController --resource</code></pre>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.14.png" class="img-fluid img-detail" alt="Error Resource Controller">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.14.png" class="img-fluid img-detail" alt="Error Resource Controller">
 
                 <h3 class="text-light mt-4 mb-3">5. Blade Template Layouting dan Hasil Verifikasi</h3>
                 <p class="text-light opacity-75">
                     Rancangan antarmuka tampilan menerapkan konsep layouting di file <code>resources/views/layouts/app.blade.php</code>. Bagian utama kerangka HTML ditambahkan tag judul teks statis h1 serta directive penampung dinamis halaman <code>@yield('content')</code>.
                 </p>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.15.png" class="img-fluid img-detail" alt="Master Skeleton Template Layout">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.15.png" class="img-fluid img-detail" alt="Master Skeleton Template Layout">
 
                 <p class="text-light opacity-75">
                     Halaman akhir view memanggil kerangka master tersebut lalu mengekstrak serta mencetak setiap baris koleksi data nama item produk ke dalam elemen daftar list HTML. Tahap akhir pengujian diverifikasi dengan mengakses rute URL lokal di alamat <code>http://127.0.0.1:8000/products</code> pada web browser. Browser sukses merender teks judul layout utama bersama dengan list baris entri nama item data seeder dari basis data.
                 </p>
-                <img src="../../../Images/Praktikum Pemograman Web 2/2.16.png" class="img-fluid img-detail" alt="Hasil Pengujian Akhir Web Browser">
+                <img src="../../Images/Praktikum Pemograman Web 2/2.16.png" class="img-fluid img-detail" alt="Hasil Pengujian Akhir Web Browser">
             </div>
         </div>
     </div>

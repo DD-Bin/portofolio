@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Laporan Praktikum App Mobile 6</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="../../Main/styles.css">
+    <link rel="stylesheet" href="../../styles.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" />
     <style>
@@ -100,24 +100,24 @@
             color: #ffffff;
         }
     </style>
-    <link rel="stylesheet" href="../../Main/report.css">
-    <script src="../../Main/interactions.js" defer></script>
+    <link rel="stylesheet" href="../../report.css">
+    <script src="../../interactions.js" defer></script>
     </head>
 <body>
     
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark glass-bg">
         <div class="container">
-            <a class="navbar-brand fw-bold" href="../../Main/index.html" style="color: #B2C9AB;">DD</a>
+            <a class="navbar-brand fw-bold" href="../../index.html" style="color: #B2C9AB;">DD</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../../Main/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../../Main/about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="../../Main/portofolio.html">Portofolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../../Main/contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../portofolio.html">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -152,7 +152,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Perhitungan Porsi Dinamis (State Lokal)</h6>
                         <p class="text-light opacity-75 small text-start">Menampilkan halaman detail resep 'Classic Margherita Pizza' yang diimplementasikan menggunakan StatefulWidget. Saat jumlah porsi dinaikkan menjadi 6 menggunakan setState(), total kalori berhasil dihitung secara dinamis menjadi 1800 kkal. Footer identitas juga telah tampil dengan benar di bagian bawah layar.</p>
-                        <img src="../../../Images/praktikum App Mobile 6/Checkpoint1.png" class="img-fluid img-screenshot w-100" alt="Halaman Detail dan Perhitungan Kalori">
+                        <img src="../../Images/praktikum App Mobile 6/Checkpoint1.png" class="img-fluid img-screenshot w-100" alt="Halaman Detail dan Perhitungan Kalori">
                     </div>
                 </div>
 
@@ -160,7 +160,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Validasi Tombol Pengurangan Porsi</h6>
                         <p class="text-light opacity-75 small text-start">Menunjukkan bahwa tombol kurang (-) menjadi tidak aktif (berwarna abu-abu) ketika jumlah porsi berada di angka 1, mencegah porsi bernilai nol atau negatif yang tidak logis dalam aplikasi resep masakan.</p>
-                        <img src="../../../Images/praktikum App Mobile 6/Checkpoint1b.png" class="img-fluid img-screenshot w-75" alt="Tombol Kurang Nonaktif">
+                        <img src="../../Images/praktikum App Mobile 6/Checkpoint1b.png" class="img-fluid img-screenshot w-75" alt="Tombol Kurang Nonaktif">
                     </div>
                 </div>
 
@@ -168,7 +168,7 @@
                     <div class="col-lg-8 step-container text-center border-0">
                         <h6 class="fw-bold text-light text-start">Logika Penonaktifan Tombol (Ternary Operator)</h6>
                         <p class="text-light opacity-75 small text-start">Potongan kode dari IconButton.filledTonal yang bertanggung jawab atas penonaktifan tombol kurang. Logikanya menggunakan ternary operator <code>onPressed: _servings > 1 ? _removeServing : null</code>. Jika _servings bernilai 1 atau kurang, fungsi diisi dengan null sehingga tombol otomatis dinonaktifkan oleh Flutter.</p>
-                        <img src="../../../Images/praktikum App Mobile 6/Checkpoint1c.png" class="img-fluid img-screenshot w-75" alt="Kode Logika Ternary Operator">
+                        <img src="../../Images/praktikum App Mobile 6/Checkpoint1c.png" class="img-fluid img-screenshot w-75" alt="Kode Logika Ternary Operator">
                     </div>
                 </div>
             </div>
@@ -181,7 +181,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Home Page & Badge Interaktif</h6>
                         <p class="text-light opacity-75 small text-start">Tampilan halaman HomePage setelah implementasi ChangeNotifierProvider. Ikon hati (favorit) yang ditekan pada daftar resep akan secara reaktif memperbarui angka pada ikon keranjang (badge) di AppBar menjadi 2.</p>
-                        <img src="../../../Images/praktikum App Mobile 6/Checkpoint2.png" class="img-fluid img-screenshot w-100" alt="Home Page dan Badge">
+                        <img src="../../Images/praktikum App Mobile 6/Checkpoint2.png" class="img-fluid img-screenshot w-100" alt="Home Page dan Badge">
                     </div>
                 </div>
 
@@ -189,7 +189,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Status Favorit pada Halaman Detail</h6>
                         <p class="text-light opacity-75 small text-start">Tampilan DetailPage dari resep yang difavoritkan. Berkat penggunaan <code>context.watch&lt;FavoriteProvider&gt;()</code>, halaman detail dapat mengetahui bahwa resep ini difavoritkan sehingga ikon hati di pojok kanan atas terisi penuh merah.</p>
-                        <img src="../../../Images/praktikum App Mobile 6/Checkpoint2b.png" class="img-fluid img-screenshot w-100" alt="Detail Page Favorit">
+                        <img src="../../Images/praktikum App Mobile 6/Checkpoint2b.png" class="img-fluid img-screenshot w-100" alt="Detail Page Favorit">
                     </div>
                 </div>
 
@@ -197,7 +197,7 @@
                     <div class="col-lg-8 step-container text-center border-0">
                         <h6 class="fw-bold text-light text-start">Daftar Halaman Favorit (Consumer)</h6>
                         <p class="text-light opacity-75 small text-start">Tampilan FavoritePage yang menggunakan Consumer. Halaman ini berhasil merender daftar resep yang telah ditandai sebagai favorit secara terpusat dari memori global aplikasi.</p>
-                        <img src="../../../Images/praktikum App Mobile 6/Checkpoint2c.png" class="img-fluid img-screenshot w-100" alt="Daftar Halaman Favorit">
+                        <img src="../../Images/praktikum App Mobile 6/Checkpoint2c.png" class="img-fluid img-screenshot w-100" alt="Daftar Halaman Favorit">
                     </div>
                 </div>
             </div>
@@ -210,7 +210,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Membangun Provider Tema Baru</h6>
                         <p class="text-light opacity-75 small text-start">Pembuatan file <code>theme_provider.dart</code> yang mewarisi class ChangeNotifier. Kelas ini bertugas menyimpan status mode tampilan aplikasi (terang/gelap) yang secara default diinisialisasi sebagai ThemeMode.light.</p>
-                        <img src="../../../Images/praktikum App Mobile 6/CodeLatihan1.png" class="img-fluid img-screenshot w-75" alt="Theme Provider">
+                        <img src="../../Images/praktikum App Mobile 6/CodeLatihan1.png" class="img-fluid img-screenshot w-75" alt="Theme Provider">
                     </div>
                 </div>
 
@@ -218,7 +218,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Merancang UI Halaman Pengaturan</h6>
                         <p class="text-light opacity-75 small text-start">Pembuatan antarmuka <code>settings_page.dart</code> menggunakan Stateless Widget. Di dalamnya disematkan komponen SwitchListTile yang mendengarkan (watch) status tema, serta memanggil fungsi pembalik tema (toggleTheme) apabila *switch* ditekan pengguna.</p>
-                        <img src="../../../Images/praktikum App Mobile 6/CodeLatihan1b.png" class="img-fluid img-screenshot w-75" alt="Halaman Pengaturan UI">
+                        <img src="../../Images/praktikum App Mobile 6/CodeLatihan1b.png" class="img-fluid img-screenshot w-75" alt="Halaman Pengaturan UI">
                     </div>
                 </div>
 
@@ -226,7 +226,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Mendaftarkan Provider di Main</h6>
                         <p class="text-light opacity-75 small text-start">Penyesuaian pada file <code>main.dart</code>. Provider tema yang telah dibuat kemudian diimpor dan didaftarkan ke dalam MultiProvider, lalu variabel themeMode milik MaterialApp diikat agar bereaksi dengan status dari ThemeProvider tersebut.</p>
-                        <img src="../../../Images/praktikum App Mobile 6/CodeLatihan1c.png" class="img-fluid img-screenshot w-75" alt="Registrasi Provider di Main">
+                        <img src="../../Images/praktikum App Mobile 6/CodeLatihan1c.png" class="img-fluid img-screenshot w-75" alt="Registrasi Provider di Main">
                     </div>
                 </div>
 
@@ -234,7 +234,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Kaitkan Halaman Pengaturan ke Navigasi</h6>
                         <p class="text-light opacity-75 small text-start">Modifikasi pada <code>home_page.dart</code> untuk menyematkan ikon gerigi (Settings) pada sisi kanan AppBar, sehingga memberikan pengguna akses interaktif menuju layar kontrol mode gelap yang telah dibuat.</p>
-                        <img src="../../../Images/praktikum App Mobile 6/CodeLatihan1d.png" class="img-fluid img-screenshot w-75" alt="Tombol Pengaturan di Home">
+                        <img src="../../Images/praktikum App Mobile 6/CodeLatihan1d.png" class="img-fluid img-screenshot w-75" alt="Tombol Pengaturan di Home">
                     </div>
                 </div>
 
@@ -242,7 +242,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Hasil Ikon Pengaturan di AppBar</h6>
                         <p class="text-light opacity-75 small text-start">Potret antarmuka HomePage yang kini menampilkan ikon pengaturan (Icons.settings) bersebelahan dengan ikon badge notifikasi favorit.</p>
-                        <img src="../../../Images/praktikum App Mobile 6/Latihan1.png" class="img-fluid img-screenshot w-100" alt="Ikon Pengaturan">
+                        <img src="../../Images/praktikum App Mobile 6/Latihan1.png" class="img-fluid img-screenshot w-100" alt="Ikon Pengaturan">
                     </div>
                 </div>
 
@@ -250,7 +250,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Hasil Interaksi Halaman Pengaturan</h6>
                         <p class="text-light opacity-75 small text-start">Tampilan fungsional halaman Pengaturan. Saat switch 'Mode Gelap' diaktifkan, state tema diperbarui melalui ThemeProvider menggunakan fungsi notifyListeners(), mengubah nuansa layar seketika.</p>
-                        <img src="../../../Images/praktikum App Mobile 6/Latihan1b.png" class="img-fluid img-screenshot w-100" alt="Halaman Pengaturan">
+                        <img src="../../Images/praktikum App Mobile 6/Latihan1b.png" class="img-fluid img-screenshot w-100" alt="Halaman Pengaturan">
                     </div>
                 </div>
 
@@ -258,7 +258,7 @@
                     <div class="col-lg-8 step-container text-center border-0">
                         <h6 class="fw-bold text-light text-start">Implementasi Dark Mode Menyeluruh</h6>
                         <p class="text-light opacity-75 small text-start">Tampilan keseluruhan aplikasi yang telah bereaksi secara dinamis. Daftar resep kini sepenuhnya dibalut dalam tema warna gelap (Dark Mode).</p>
-                        <img src="../../../Images/praktikum App Mobile 6/Latihan1c.png" class="img-fluid img-screenshot w-100" alt="Dark Mode">
+                        <img src="../../Images/praktikum App Mobile 6/Latihan1c.png" class="img-fluid img-screenshot w-100" alt="Dark Mode">
                     </div>
                 </div>
             </div>
@@ -271,7 +271,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Pembuatan Logika Penghapusan Massal</h6>
                         <p class="text-light opacity-75 small text-start">Modifikasi di dalam file <code>favorite_page.dart</code>. Widget IconButton tambahan dimasukkan ke area actions pada AppBar. Tombol ini diprogram untuk merender pop-up AlertDialog yang menampung instruksi 'read' menuju fungsi clear() milik FavoriteProvider.</p>
-                        <img src="../../../Images/praktikum App Mobile 6/CodeLatihan2.png" class="img-fluid img-screenshot w-75" alt="Logika Hapus Semua">
+                        <img src="../../Images/praktikum App Mobile 6/CodeLatihan2.png" class="img-fluid img-screenshot w-75" alt="Logika Hapus Semua">
                     </div>
                 </div>
 
@@ -279,7 +279,7 @@
                     <div class="col-lg-8 step-container text-center">
                         <h6 class="fw-bold text-light text-start">Tombol Hapus Terpasang</h6>
                         <p class="text-light opacity-75 small text-start">Penambahan ikon tempat sampah di sudut kanan AppBar halaman Favorit. Tombol ini memiliki pengaman logika untuk dinonaktifkan (disable) secara otomatis jika daftar favorit kosong (count == 0).</p>
-                        <img src="../../../Images/praktikum App Mobile 6/Latihan2.png" class="img-fluid img-screenshot w-100" alt="Tombol Hapus Semua Favorit">
+                        <img src="../../Images/praktikum App Mobile 6/Latihan2.png" class="img-fluid img-screenshot w-100" alt="Tombol Hapus Semua Favorit">
                     </div>
                 </div>
 
@@ -287,7 +287,7 @@
                     <div class="col-lg-8 step-container text-center border-0">
                         <h6 class="fw-bold text-light text-start">Dialog Konfirmasi Penghapusan</h6>
                         <p class="text-light opacity-75 small text-start">Munculnya dialog konfirmasi (AlertDialog) saat tombol hapus semua ditekan, bertugas memastikan pengguna tidak keliru sebelum daftar favorit dikosongkan secara bersih dari memori.</p>
-                        <img src="../../../Images/praktikum App Mobile 6/Latihan2b.png" class="img-fluid img-screenshot w-100" alt="Dialog Konfirmasi Hapus">
+                        <img src="../../Images/praktikum App Mobile 6/Latihan2b.png" class="img-fluid img-screenshot w-100" alt="Dialog Konfirmasi Hapus">
                     </div>
                 </div>
             </div>
@@ -386,7 +386,7 @@
             </div>
 
             <div class="text-center mt-5 mb-3">
-                <a href="../../Main/portofolio.html" class="btn btn-outline-light mx-2">
+                <a href="../../portofolio.html" class="btn btn-outline-light mx-2">
                     <i class="bi bi-arrow-left me-2"></i> Kembali ke Portofolio
                 </a>
             </div>

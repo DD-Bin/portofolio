@@ -66,25 +66,25 @@
             color: #B2C9AB;
         }
     </style>
-    <link rel="stylesheet" href="../../Main/styles.css">
-    <link rel="stylesheet" href="../../Main/report.css">
-    <script src="../../Main/interactions.js" defer></script>
+    <link rel="stylesheet" href="../../styles.css">
+    <link rel="stylesheet" href="../../report.css">
+    <script src="../../interactions.js" defer></script>
     </head>
 
 <body>
     
     <nav class="navbar navbar-expand-lg fixed-top navbar-dark glass-bg">
         <div class="container">
-            <a class="navbar-brand fw-bold text-sage" href="../../Main/index.html">DD</a>
+            <a class="navbar-brand fw-bold text-sage" href="../../index.html">DD</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="../../Main/index.html">Home</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../../Main/about.html">About</a></li>
-                    <li class="nav-item"><a class="nav-link active" href="../../Main/portofolio.html">Portofolio</a></li>
-                    <li class="nav-item"><a class="nav-link" href="../../Main/contact.html">Contact</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../about.html">About</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="../../portofolio.html">Portofolio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="../../contact.html">Contact</a></li>
                 </ul>
             </div>
         </div>
@@ -94,7 +94,7 @@
         <div class="row justify-content-center">
             <div class="col-lg-10">
                
-                <a href="../../Main/portofolio.html" class="btn btn-outline-light mb-4 btn-sm rounded-pill">
+                <a href="../../portofolio.html" class="btn btn-outline-light mb-4 btn-sm rounded-pill">
                     <i class="bi bi-arrow-left"></i> Kembali ke Portfolio
                 </a>
 
@@ -125,8 +125,8 @@
                         Langkah awal dimulai dengan melakukan instalasi kerangka kerja Laravel baru bernama <code class="text-sage">PrakWeb3</code> via terminal server environment menggunakan Composer Dependency Manager:
                     </p>
                     <pre><code class="text-success">composer create-project laravel/laravel PrakWeb3</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/1.png" class="img-fluid img-detail" alt="Inisialisasi Project Laravel">
-                    <img src="../../../Images/Praktikum Pemograman Web 3/2.png" class="img-fluid img-detail" alt="Proses Extracting Packages Composer">
+                    <img src="../../Images/Praktikum Pemograman Web 3/1.png" class="img-fluid img-detail" alt="Inisialisasi Project Laravel">
+                    <img src="../../Images/Praktikum Pemograman Web 3/2.png" class="img-fluid img-detail" alt="Proses Extracting Packages Composer">
 
                     <p class="text-light opacity-75 mt-4">
                         Selanjutnya, skema tabel master basis data dan foreign key didefinisikan secara struktural lewat baris migrasi. Berkas skema ini dibuat bertahap menggunakan perintah kerangka kerja bawaan Artisan CLI:
@@ -134,34 +134,34 @@
                     
                     <h4 class="text-sage h6 mt-3">A. Pembuatan dan Konfigurasi Tabel Majors</h4>
                     <pre><code class="text-success">php artisan make:migration create_majors_table</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/12.png" class="img-fluid img-detail" alt="Pembuatan Migration Majors Sukses">
-                    <img src="../../../Images/Praktikum Pemograman Web 3/5.png" class="img-fluid img-detail" alt="Struktur File Skema Migration Majors">
+                    <img src="../../Images/Praktikum Pemograman Web 3/12.png" class="img-fluid img-detail" alt="Pembuatan Migration Majors Sukses">
+                    <img src="../../Images/Praktikum Pemograman Web 3/5.png" class="img-fluid img-detail" alt="Struktur File Skema Migration Majors">
 
                     <h4 class="text-sage h6 mt-4">B. Pembuatan dan Konfigurasi Tabel Students</h4>
                     <pre><code class="text-success">php artisan make:migration create_students_table</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/6.png" class="img-fluid img-detail" alt="Pembuatan Migration Students Sukses">
-                    <img src="../../../Images/Praktikum Pemograman Web 3/7.png" class="img-fluid img-detail" alt="Struktur File Skema Migration Students Terkait Relasi Majors">
+                    <img src="../../Images/Praktikum Pemograman Web 3/6.png" class="img-fluid img-detail" alt="Pembuatan Migration Students Sukses">
+                    <img src="../../Images/Praktikum Pemograman Web 3/7.png" class="img-fluid img-detail" alt="Struktur File Skema Migration Students Terkait Relasi Majors">
 
                     <h4 class="text-sage h6 mt-4">C. Pembuatan dan Konfigurasi Tabel Subjects</h4>
                     <pre><code class="text-success">php artisan make:migration create_subjects_table</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/8.png" class="img-fluid img-detail" alt="Pembuatan Migration Subjects Sukses">
-                    <img src="../../../Images/Praktikum Pemograman Web 3/9.png" class="img-fluid img-detail" alt="Struktur File Skema Migration Subjects">
+                    <img src="../../Images/Praktikum Pemograman Web 3/8.png" class="img-fluid img-detail" alt="Pembuatan Migration Subjects Sukses">
+                    <img src="../../Images/Praktikum Pemograman Web 3/9.png" class="img-fluid img-detail" alt="Struktur File Skema Migration Subjects">
 
                     <h4 class="text-sage h6 mt-4">D. Pembuatan dan Konfigurasi Tabel Pivot Student_Subject</h4>
                     <p class="text-light opacity-75">
                         Tabel *pivot* <code class="text-sage">student_subject</code> ditambahkan field <code class="text-sage">student_id</code> and <code class="text-sage">subject_id</code> dengan batasan indeks unik kombinasi ganda guna mencegah duplikasi pengisian relasi objek data yang sama.
                     </p>
                     <pre><code class="text-success">php artisan make:migration create_student_subject_table</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/10.png" class="img-fluid img-detail" alt="Pembuatan Migration Pivot Student Subject Sukses">
-                    <img src="../../../Images/Praktikum Pemograman Web 3/3.png" class="img-fluid img-detail" alt="Detail Up Method Skema Pivot">
-                    <img src="../../../Images/Praktikum Pemograman Web 3/4.png" class="img-fluid img-detail" alt="Full Source File Skema Migration Pivot">
+                    <img src="../../Images/Praktikum Pemograman Web 3/10.png" class="img-fluid img-detail" alt="Pembuatan Migration Pivot Student Subject Sukses">
+                    <img src="../../Images/Praktikum Pemograman Web 3/3.png" class="img-fluid img-detail" alt="Detail Up Method Skema Pivot">
+                    <img src="../../Images/Praktikum Pemograman Web 3/4.png" class="img-fluid img-detail" alt="Full Source File Skema Migration Pivot">
 
                     <h4 class="text-sage h6 mt-4">E. Eksekusi Skema Database Migration</h4>
                     <p class="text-light opacity-75">
                         Setelah seluruh komponen berkas rancangan skema tabel terdefinisi, migrasi dijalankan ke database MySQL menggunakan Artisan Command:
                     </p>
                     <pre><code class="text-success">php artisan migrate</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/13.png" class="img-fluid img-detail" alt="Hasil Eksekusi Perintah Artisan Migrate">
+                    <img src="../../Images/Praktikum Pemograman Web 3/13.png" class="img-fluid img-detail" alt="Hasil Eksekusi Perintah Artisan Migrate">
 
                     <h3 class="text-light mt-5 mb-3">2. Implementasi Model Eloquent Relationship</h3>
                     <p class="text-light opacity-75">
@@ -171,20 +171,20 @@
                     <h4 class="text-sage h6 mt-3">A. Rancangan Struktur Model Major</h4>
                     <p class="text-light opacity-75">Mendefinisikan fungsi kardinalitas <code class="text-sage">students()</code> menggunakan metode pemanggilan <code class="text-sage">$this->hasMany()</code> (Hubungan satu jurusan memiliki banyak mahasiswa).</p>
                     <pre><code class="text-success">php artisan make:model Major</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/14.png" class="img-fluid img-detail" alt="Pembuatan Model Major Sukses">
-                    <img src="../../../Images/Praktikum Pemograman Web 3/17.png" class="img-fluid img-detail" alt="Source Code Model Major HasMany">
+                    <img src="../../Images/Praktikum Pemograman Web 3/14.png" class="img-fluid img-detail" alt="Pembuatan Model Major Sukses">
+                    <img src="../../Images/Praktikum Pemograman Web 3/17.png" class="img-fluid img-detail" alt="Source Code Model Major HasMany">
 
                     <h4 class="text-sage h6 mt-4">B. Rancangan Struktur Model Student</h4>
                     <p class="text-light opacity-75">Mempunyai dua buah pemetaan relasi yaitu <code class="text-sage">major()</code> dengan metode <code class="text-sage">belongsTo()</code> serta <code class="text-sage">subjects()</code> dengan relasi jamak <code class="text-sage">belongsToMany()</code> untuk menghubungkan tabel pivot.</p>
                     <pre><code class="text-success">php artisan make:model Student</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/15.png" class="img-fluid img-detail" alt="Pembuatan Model Student Sukses">
-                    <img src="../../../Images/Praktikum Pemograman Web 3/16.png" class="img-fluid img-detail" alt="Source Code Model Student Multirelasi">
+                    <img src="../../Images/Praktikum Pemograman Web 3/15.png" class="img-fluid img-detail" alt="Pembuatan Model Student Sukses">
+                    <img src="../../Images/Praktikum Pemograman Web 3/16.png" class="img-fluid img-detail" alt="Source Code Model Student Multirelasi">
 
                     <h4 class="text-sage h6 mt-4">C. Rancangan Struktur Model Subject</h4>
                     <p class="text-light opacity-75">Mendefinisikan fungsi timbal-balik hubungan jamak mahasiswa lewat fungsi <code class="text-sage">students()</code> dengan metode <code class="text-sage">belongsToMany()</code>.</p>
                     <pre><code class="text-success">php artisan make:model Subject</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/18.png" class="img-fluid img-detail" alt="Pembuatan Model Subject Sukses">
-                    <img src="../../../Images/Praktikum Pemograman Web 3/19.png" class="img-fluid img-detail" alt="Source Code Model Subject BelongsToMany">
+                    <img src="../../Images/Praktikum Pemograman Web 3/18.png" class="img-fluid img-detail" alt="Pembuatan Model Subject Sukses">
+                    <img src="../../Images/Praktikum Pemograman Web 3/19.png" class="img-fluid img-detail" alt="Source Code Model Subject BelongsToMany">
 
                     <h3 class="text-light mt-5 mb-3">3. Database Seeding (Pengisian Baris Data Sample)</h3>
                     <p class="text-light opacity-75">
@@ -193,41 +193,41 @@
 
                     <h4 class="text-sage h6 mt-3">A. File Komponen MajorSeeder</h4>
                     <pre><code class="text-success">php artisan make:seeder MajorSeeder</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/20.png" class="img-fluid img-detail" alt="Pembuatan MajorSeeder Sukses">
-                    <img src="../../../Images/Praktikum Pemograman Web 3/21.png" class="img-fluid img-detail" alt="Implementasi Loop Record Data Teknik Informatika, Sistem Informasi, dsb">
+                    <img src="../../Images/Praktikum Pemograman Web 3/20.png" class="img-fluid img-detail" alt="Pembuatan MajorSeeder Sukses">
+                    <img src="../../Images/Praktikum Pemograman Web 3/21.png" class="img-fluid img-detail" alt="Implementasi Loop Record Data Teknik Informatika, Sistem Informasi, dsb">
 
                     <h4 class="text-sage h6 mt-4">B. File Komponen SubjectSeeder</h4>
                     <pre><code class="text-success">php artisan make:seeder SubjectSeeder</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/22.png" class="img-fluid img-detail" alt="Pembuatan SubjectSeeder Sukses">
-                    <img src="../../../Images/Praktikum Pemograman Web 3/23.png" class="img-fluid img-detail" alt="Implementasi Isi Koleksi Data Mata Kuliah Beserta SKS">
+                    <img src="../../Images/Praktikum Pemograman Web 3/22.png" class="img-fluid img-detail" alt="Pembuatan SubjectSeeder Sukses">
+                    <img src="../../Images/Praktikum Pemograman Web 3/23.png" class="img-fluid img-detail" alt="Implementasi Isi Koleksi Data Mata Kuliah Beserta SKS">
 
                     <h4 class="text-sage h6 mt-4">C. File Komponen StudentSeeder</h4>
                     <p class="text-light opacity-75">
                         Di dalam logic class seeder ini, entitas objek mahasiswa diinput ke database, kemudian dipasangkan fungsi penambahan data mata kuliah acak memanfaatkan method bawaan Eloquent <code class="text-sage">attach()</code>.
                     </p>
                     <pre><code class="text-success">php artisan make:seeder StudentSeeder</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/24.png" class="img-fluid img-detail" alt="Pembuatan StudentSeeder Sukses">
-                    <img src="../../../Images/Praktikum Pemograman Web 3/25.png" class="img-fluid img-detail" alt="Implementasi Pengisian Mahasiswa dan Random Attachment Mata Kuliah Pivot">
+                    <img src="../../Images/Praktikum Pemograman Web 3/24.png" class="img-fluid img-detail" alt="Pembuatan StudentSeeder Sukses">
+                    <img src="../../Images/Praktikum Pemograman Web 3/25.png" class="img-fluid img-detail" alt="Implementasi Pengisian Mahasiswa dan Random Attachment Mata Kuliah Pivot">
 
                     <h4 class="text-sage h6 mt-4">D. Registrasi Master & Eksekusi Seeder</h4>
                     <p class="text-light opacity-75">
                         Seluruh sub-class di atas didaftarkan ke dalam method utama <code class="text-sage">run()</code> pada file penanggung jawab master <code class="text-sage">DatabaseSeeder.php</code>, kemudian dipicu serentak lewat perintah terminal:
                     </p>
                     <pre><code class="text-success">php artisan db:seed</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/26.png" class="img-fluid img-detail" alt="Registrasi Database Seeder Master">
-                    <img src="../../../Images/Praktikum Pemograman Web 3/27.png" class="img-fluid img-detail" alt="Hasil Verifikasi Sukses Eksekusi Seeding Basis Data">
+                    <img src="../../Images/Praktikum Pemograman Web 3/26.png" class="img-fluid img-detail" alt="Registrasi Database Seeder Master">
+                    <img src="../../Images/Praktikum Pemograman Web 3/27.png" class="img-fluid img-detail" alt="Hasil Verifikasi Sukses Eksekusi Seeding Basis Data">
 
                     <h3 class="text-light mt-5 mb-3">4. Konfigurasi Web Routing & StudentController</h3>
                     <p class="text-light opacity-75">
                         Komponen logic controller berfungsi penuh untuk menjembatani dan menangani permintaan data dari user. Berkas file <code class="text-sage">StudentController.php</code> dikonfigurasi menggunakan teknik optimasi performa <b>Eager Loading</b> yaitu fungsi <code class="text-sage">Student::with(['major', 'subjects'])->get()</code>. Pemanggilan metode ini sangat krusial untuk menghindari permasalahan penarikan query berulang atau <i>N+1 Query Problem</i> di dalam database server.
                     </p>
                     <pre><code class="text-success">php artisan make:controller StudentController</code></pre>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/28.png" class="img-fluid img-detail" alt="Pembuatan Resource StudentController">
+                    <img src="../../Images/Praktikum Pemograman Web 3/28.png" class="img-fluid img-detail" alt="Pembuatan Resource StudentController">
                     
                     <p class="text-light opacity-75 mt-4">
                         Di dalam berkas komponen <code class="text-sage">StudentController</code>, dituliskan method logika utama bernama <code class="text-white">index()</code>. Fungsi kode tersebut bertugas menarik seluruh koleksi isi data objek mahasiswa beserta relasi tabel jurusannya, lalu meneruskannya ke view penampil <code class="text-white">students.index</code> menggunakan bantuan fungsi bawaan <code class="text-sage">compact()</code>.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/29.png" class="img-fluid img-detail" alt="Source Code Method Index StudentController">
+                    <img src="../../Images/Praktikum Pemograman Web 3/29.png" class="img-fluid img-detail" alt="Source Code Method Index StudentController">
 
                     <p class="text-light opacity-75 mt-3">
                         Perutean sistem dikonfigurasi di dalam berkas file rute utama <code class="text-white">routes/web.php</code>. Sesuai instruksi modul akademik, ditambahkan fungsi *callback* GET pada rute root <code class="text-white">'/'</code> yang diarahkan langsung untuk melakukan *redirecting* menuju rute endpoint utama <code class="text-white">students</code>, bersamaan dengan pendaftaran rute resource terintegrasi:
@@ -245,7 +245,7 @@ Route::resource('students', StudentController::class);</code></pre>
                     <p class="text-light opacity-75 text-justify">
                         Tahap akhir pengujian diverifikasi dengan menjalankan server lokal aplikasi dan mengakses alamat endpoint URL rute pada web browser. Browser sukses mengekstrak, merender, dan menyajikan visualisasi komponen tabel dinamis daftar data seeder mahasiswa terintegrasi Bootstrap, lengkap beserta list mata kuliah berelasi yang diambil dari tabel pivot database.
                     </p>
-                    <img src="../../../Images/Praktikum Pemograman Web 3/30.png" class="img-fluid img-detail" alt="Hasil Pengujian Akhir Aplikasi pada Web Browser">
+                    <img src="../../Images/Praktikum Pemograman Web 3/30.png" class="img-fluid img-detail" alt="Hasil Pengujian Akhir Aplikasi pada Web Browser">
                 </div>
                 
             </div>
